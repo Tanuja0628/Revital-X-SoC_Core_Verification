@@ -1,0 +1,196 @@
+--------------------------------------------------------
+ Starting UVM Simulation: corerv_test
+--------------------------------------------------------
+irun -clean -64bit -sv -uvm -access +rwc -svseed 22738 -coverage all -covoverwrite -covtest corerv_test /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/*.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_if.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv ./spike_wrapper.so +UVM_TESTNAME=corerv_test
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+irun: *N,CLEAN: Removing existing directory ./INCA_libs.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu_in1_mux.sv
+	module worklib.alu_in1_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu_in2_mux.sv
+	module worklib.alu_in2_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu_mul_csr_mux.sv
+	module worklib.alu_mul_csr_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu.sv
+	module worklib.alu:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Control_Unit.sv
+	module worklib.Control_Unit:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/CoreRV.sv
+	module worklib.CoreRV:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/csr_register_file.sv
+	module worklib.csr_register_file:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/csr_unit.sv
+	module worklib.csr_unit:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/data_ram.sv
+	module worklib.data_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/dp_ram.sv
+	module worklib.dp_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/immediate_generator.sv
+	module worklib.immediate_generator:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/instr_ram.sv
+	module worklib.instr_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/interrupt_controller.sv
+	module worklib.interrupt_controller:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/LSU_RVX.sv
+	module worklib.LSU_RVX:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Memory_Ctrl.sv
+	module worklib.Memory_Ctrl:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/memtoreg_mux.sv
+	module worklib.memtoreg_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/pc_mux.sv
+	module worklib.pc_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Pipelined_M.sv
+	module worklib.Pipelined_M:sv
+		errors: 0, warnings: 0
+	module worklib.M1:sv
+		errors: 0, warnings: 0
+	module worklib.M2:sv
+		errors: 0, warnings: 0
+	module worklib.half_adder:sv
+		errors: 0, warnings: 0
+	module worklib.full_adder:sv
+		errors: 0, warnings: 0
+	module worklib.booth_encoder:sv
+		errors: 0, warnings: 0
+	module worklib.gp_cell:sv
+		errors: 0, warnings: 0
+	module worklib.cla4:sv
+		errors: 0, warnings: 0
+	module worklib.cla16:sv
+		errors: 0, warnings: 0
+	module worklib.cla64:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/register_file.sv
+	module worklib.register_file:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/sp_ram.sv
+	module worklib.sp_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Stage1.sv
+	module worklib.Stage1:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Stage2.sv
+	module worklib.Stage2:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/stall_controller.sv
+	module worklib.stall_controller:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_if.sv
+	interface worklib.corerv_if:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv
+	package worklib.corerv_pkg:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv
+	interface worklib.corerv_trace_if:sv
+		errors: 0, warnings: 0
+	module worklib.tb_top:sv
+		errors: 0, warnings: 0
+$CDSROOT = /home/install/INCISIVE152
+$TESTDIR = /home/user1/Darshan_Verification/Tanuja/core_uvm/sim
+
+TOOL:	ncsc(64)	15.20-s086
+make[1]: Entering directory `/home/user1/Darshan_Verification/Tanuja/core_uvm/sim'
+building library run.so
+make[1]: Leaving directory `/home/user1/Darshan_Verification/Tanuja/core_uvm/sim'
+
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	)dut (
+	   |
+ncelab: *W,CUVWSP (../tb/sv/tb_top.sv,54|4): 2 output ports were not connected:
+ncelab: (../rtl/CoreRV.sv,23): irq_ack_o
+ncelab: (../rtl/CoreRV.sv,24): irq_id_o
+
+	)dut (
+	   |
+ncelab: *W,CUVWSI (../tb/sv/tb_top.sv,54|4): 1 input port was not connected:
+ncelab: (../rtl/CoreRV.sv,22): irq_i
+
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		corerv_pkg
+		$unit_0x388f07e4
+		dp_ram
+		half_adder
+		tb_top
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+	Extracting FSMs for coverage:
+		worklib.dp_ram
+		worklib.half_adder
+		worklib.interrupt_controller
+		worklib.Memory_Ctrl
+		worklib.pc_mux
+		worklib.sp_ram
+		worklib.instr_ram
+		worklib.register_file
+		worklib.csr_register_file
+		worklib.Control_Unit
+		worklib.immediate_generator
+		worklib.Stage1
+		worklib.alu_in1_mux
+		worklib.alu_in2_mux
+		worklib.alu
+		worklib.csr_unit
+		worklib.booth_encoder
+		worklib.M1
+		worklib.full_adder
+		worklib.M2
+		worklib.gp_cell
+		worklib.cla4
+		worklib.cla16
+		worklib.cla64
+		worklib.Pipelined_M
+		worklib.alu_mul_csr_mux
+		worklib.Stage2
+		worklib.stall_controller
+		worklib.LSU_RVX
+			FSM extracted for state register state
+		worklib.data_ram
+		worklib.memtoreg_mux
+		worklib.CoreRV
+		worklib.tb_top
+	Total FSMs extracted = 1
+	Building instance overlay tables: ...................
+ncelab: *W,COVFHT: FSM hold transitions (transitions to the current state) are not extracted for any FSM in default mode.
+. Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+ncelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *F,INTERR: INTERNAL EXCEPTION
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	ncelab(64)	15.20-s086
+  HOSTNAME: cegdececwisd5.annauniv.edu
+  OPERATING SYSTEM: Linux 3.10.0-1160.el7.x86_64 #1 SMP Tue Aug 18 14:50:17 EDT 2020 x86_64
+  MESSAGE: xdlib_openPakLib: failed to seek end of bfp of library 'worklib'
+-----------------------------------------------------------------
+csi-ncelab - CSI: Cadence Support Investigation, sending details to /home/user1/Darshan_Verification/Tanuja/core_uvm/sim/ncelab_24742.err
+csi-ncelab - CSI: investigation complete, send /home/user1/Darshan_Verification/Tanuja/core_uvm/sim/ncelab_24742.err to Cadence Support
+irun: *E,ELBERR: Error during elaboration (status 255), exiting.
+make: *** [run] Error 1
