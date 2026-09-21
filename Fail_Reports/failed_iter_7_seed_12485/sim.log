@@ -1,0 +1,355 @@
+--------------------------------------------------------
+ Starting UVM Simulation: corerv_test
+--------------------------------------------------------
+irun -clean -64bit -sv -uvm -access +rwc -svseed 12485 -coverage all -covoverwrite -covtest corerv_test /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/*.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_if.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv ./spike_wrapper.so +UVM_TESTNAME=corerv_test
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+irun: *N,CLEAN: Removing existing directory ./INCA_libs.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu_in1_mux.sv
+	module worklib.alu_in1_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu_in2_mux.sv
+	module worklib.alu_in2_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu_mul_csr_mux.sv
+	module worklib.alu_mul_csr_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu.sv
+	module worklib.alu:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Control_Unit.sv
+	module worklib.Control_Unit:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/CoreRV.sv
+	module worklib.CoreRV:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/csr_register_file.sv
+	module worklib.csr_register_file:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/csr_unit.sv
+	module worklib.csr_unit:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/data_ram.sv
+	module worklib.data_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/dp_ram.sv
+	module worklib.dp_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/immediate_generator.sv
+	module worklib.immediate_generator:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/instr_ram.sv
+	module worklib.instr_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/interrupt_controller.sv
+	module worklib.interrupt_controller:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/LSU_RVX.sv
+	module worklib.LSU_RVX:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Memory_Ctrl.sv
+	module worklib.Memory_Ctrl:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/memtoreg_mux.sv
+	module worklib.memtoreg_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/pc_mux.sv
+	module worklib.pc_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Pipelined_M.sv
+	module worklib.Pipelined_M:sv
+		errors: 0, warnings: 0
+	module worklib.M1:sv
+		errors: 0, warnings: 0
+	module worklib.M2:sv
+		errors: 0, warnings: 0
+	module worklib.half_adder:sv
+		errors: 0, warnings: 0
+	module worklib.full_adder:sv
+		errors: 0, warnings: 0
+	module worklib.booth_encoder:sv
+		errors: 0, warnings: 0
+	module worklib.gp_cell:sv
+		errors: 0, warnings: 0
+	module worklib.cla4:sv
+		errors: 0, warnings: 0
+	module worklib.cla16:sv
+		errors: 0, warnings: 0
+	module worklib.cla64:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/register_file.sv
+	module worklib.register_file:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/sp_ram.sv
+	module worklib.sp_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Stage1.sv
+	module worklib.Stage1:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Stage2.sv
+	module worklib.Stage2:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/stall_controller.sv
+	module worklib.stall_controller:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_if.sv
+	interface worklib.corerv_if:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv
+	package worklib.corerv_pkg:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv
+	interface worklib.corerv_trace_if:sv
+		errors: 0, warnings: 0
+	module worklib.tb_top:sv
+		errors: 0, warnings: 0
+$CDSROOT = /home/install/INCISIVE152
+$TESTDIR = /home/user1/Darshan_Verification/Tanuja/core_uvm/sim
+
+TOOL:	ncsc(64)	15.20-s086
+make[1]: Entering directory `/home/user1/Darshan_Verification/Tanuja/core_uvm/sim'
+building library run.so
+make[1]: Leaving directory `/home/user1/Darshan_Verification/Tanuja/core_uvm/sim'
+
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	)dut (
+	   |
+ncelab: *W,CUVWSP (../tb/sv/tb_top.sv,54|4): 2 output ports were not connected:
+ncelab: (../rtl/CoreRV.sv,23): irq_ack_o
+ncelab: (../rtl/CoreRV.sv,24): irq_id_o
+
+	)dut (
+	   |
+ncelab: *W,CUVWSI (../tb/sv/tb_top.sv,54|4): 1 input port was not connected:
+ncelab: (../rtl/CoreRV.sv,22): irq_i
+
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		corerv_pkg
+		$unit_0x388f07e4
+		dp_ram
+		half_adder
+		tb_top
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+	Extracting FSMs for coverage:
+		worklib.dp_ram
+		worklib.half_adder
+		worklib.interrupt_controller
+		worklib.Memory_Ctrl
+		worklib.pc_mux
+		worklib.sp_ram
+		worklib.instr_ram
+		worklib.register_file
+		worklib.csr_register_file
+		worklib.Control_Unit
+		worklib.immediate_generator
+		worklib.Stage1
+		worklib.alu_in1_mux
+		worklib.alu_in2_mux
+		worklib.alu
+		worklib.csr_unit
+		worklib.booth_encoder
+		worklib.M1
+		worklib.full_adder
+		worklib.M2
+		worklib.gp_cell
+		worklib.cla4
+		worklib.cla16
+		worklib.cla64
+		worklib.Pipelined_M
+		worklib.alu_mul_csr_mux
+		worklib.Stage2
+		worklib.stall_controller
+		worklib.LSU_RVX
+			FSM extracted for state register state
+		worklib.data_ram
+		worklib.memtoreg_mux
+		worklib.CoreRV
+		worklib.tb_top
+	Total FSMs extracted = 1
+	Building instance overlay tables: ...................
+ncelab: *W,COVFHT: FSM hold transitions (transitions to the current state) are not extracted for any FSM in default mode.
+. Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+ncelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.Control_Unit:sv <0x516e4421> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.CoreRV:sv <0x44afc559> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.LSU_RVX:sv <0x249ae70a> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.M1:sv <0x25e7b7fc> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.M2:sv <0x4e5b01f7> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.Memory_Ctrl:sv <0x41b0ca7c> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.Pipelined_M:sv <0x58f2ee22> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.Stage1:sv <0x3b45b068> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.Stage2:sv <0x3f9424eb> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.alu:sv <0x0abf656e> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.alu_in1_mux:sv <0x2c2313d7> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.alu_in2_mux:sv <0x21db1c70> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.alu_mul_csr_mux:sv <0x74fc9279> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.booth_encoder:sv <0x4f9a32d7> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.cdns_assert2uvm_pkg:sv <0x09043a22> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.cdns_uvm_pkg:sv <0x1daf05ff> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.cdns_uvm_pkg:sv <0x4e72f769> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.cdns_uvm_pkg:sv <0x5643060f> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.cdns_uvm_pkg:sv <0x628da63b> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.cdns_uvmapi:svp <0x4eeed3a9> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.cla16:sv <0x57530f55> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.cla4:sv <0x13b5beb5> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.cla64:sv <0x4ef33033> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.corerv_if:sv <0x321d1431> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.corerv_pkg:sv <0x5e0b5c90> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.corerv_trace_if:sv <0x7a9e4019> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.csr_register_file:sv <0x6a434408> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.csr_unit:sv <0x75ac1d01> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.data_ram:sv <0x14bb8eb7> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.dp_ram:sv <0x2f0dff6d> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.full_adder:sv <0x1f6ad9be> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.gp_cell:sv <0x4e334a19> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.half_adder:sv <0x4130fb25> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.immediate_generator:sv <0x3ac14e6c> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.instr_ram:sv <0x31554902> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.interrupt_controller:sv <0x2bae3d8b> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.memtoreg_mux:sv <0x196d2fb1> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.pc_mux:sv <0x75b34f3e> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.register_file:sv <0x2521ba8a> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.sp_ram:sv <0x29d2d672> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.sp_ram:sv <0x356e5f83> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.sp_ram:sv <0x73ecf674> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.stall_controller:sv <0x1522e610> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.tb_top:sv <0x2544df29> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x01ac61ef> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x01c266f6> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x0303f4ac> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x0318ca69> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x08afa72c> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x0901f621> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x0aeb521b> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x10642354> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x1726efbb> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x17c8d12f> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x1a30e58f> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x2b0a392b> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x2c0a262b> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x30e64862> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x32777b24> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x38cc6fc3> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x3a692af2> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x3ae1c94b> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x3c593d1a> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x3d07073e> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x3f4b8279> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x3fda9cfa> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x455f1483> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x461f6a3f> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x464bb1ed> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x4b9cc803> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x4c559598> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x4d39c312> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x4fbdddf7> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x4fc4b563> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x578ca5d9> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x5b4755cd> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x5c4e4353> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x5eac42e7> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x621d3b39> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x64712540> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x6852afd5> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x71e2ecfc> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x74bbdd05> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x74ffaeb0> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x77e26c66> failed.
+ncvlog_cg: *F,BADCLP: The -CDSLIB argument's path ./INCA_libs/irun.lnx8664.15.20.nc/cds.lib does not exist or is not readable.
+ncelab: *E,CUVCGF: Code generation for worklib.uvm_pkg:sv <0x7f3aebe1> failed.
+ncelab: *F,CGFAIL: Code generation failed for one or more modules.
+irun: *E,ELBERR: Error during elaboration (status 2), exiting.
+make: *** [run] Error 1
