@@ -1,0 +1,15 @@
+# Ignore temporary, compiled object, and swap files
+*.o
+*.elf
+*.bin
+*.tmp
+*.swp
+*~
+.DS_Store
+
+# Explicitly ensure failure tracking artifacts are committed
+!*.log
+!*.S
+!*.txt
+!*.hex
+!*.md
