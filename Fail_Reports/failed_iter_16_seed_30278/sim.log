@@ -1,0 +1,23 @@
+--------------------------------------------------------
+ Starting UVM Simulation: corerv_test
+--------------------------------------------------------
+irun -clean -64bit -sv -uvm -access +rwc -svseed 30278 -coverage all -covoverwrite -covtest corerv_test /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/*.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_if.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv ./spike_wrapper.so +UVM_TESTNAME=corerv_test
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+irun: *N,CLEAN: Removing existing directory ./INCA_libs.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d
+ncvlog: *F,INTERR: INTERNAL EXCEPTION
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	ncvlog(64)	15.20-s086
+  HOSTNAME: cegdececwisd5.annauniv.edu
+  OPERATING SYSTEM: Linux 3.10.0-1160.el7.x86_64 #1 SMP Tue Aug 18 14:50:17 EDT 2020 x86_64
+  MESSAGE: xdlib_openPakLib: failed to seek end of bfp of library 'worklib'
+-----------------------------------------------------------------
+csi-ncvlog - CSI: Cadence Support Investigation, sending details to /home/user1/Darshan_Verification/Tanuja/core_uvm/sim/ncvlog_24837.err
+csi-ncvlog - CSI: investigation complete, send /home/user1/Darshan_Verification/Tanuja/core_uvm/sim/ncvlog_24837.err to Cadence Support
+irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 255).
+irun: *E,UVMCXF: The process to compile the uvm extensions has failed. Add -uvmnocdnsextra to disable the addon package or point to the right version using -uvmexthome.
+make: *** [run] Error 1
