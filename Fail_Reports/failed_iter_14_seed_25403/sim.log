@@ -1,0 +1,325 @@
+--------------------------------------------------------
+ Starting UVM Simulation: corerv_test
+--------------------------------------------------------
+irun -clean -64bit -sv -uvm -access +rwc -svseed 25403 -coverage all -covoverwrite -covtest corerv_test /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/*.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_if.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv ./spike_wrapper.so +UVM_TESTNAME=corerv_test
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+irun: *N,CLEAN: Removing existing directory ./INCA_libs.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu_in1_mux.sv
+	module worklib.alu_in1_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu_in2_mux.sv
+	module worklib.alu_in2_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu_mul_csr_mux.sv
+	module worklib.alu_mul_csr_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu.sv
+	module worklib.alu:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Control_Unit.sv
+	module worklib.Control_Unit:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/CoreRV.sv
+	module worklib.CoreRV:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/csr_register_file.sv
+	module worklib.csr_register_file:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/csr_unit.sv
+	module worklib.csr_unit:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/data_ram.sv
+	module worklib.data_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/dp_ram.sv
+	module worklib.dp_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/immediate_generator.sv
+	module worklib.immediate_generator:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/instr_ram.sv
+	module worklib.instr_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/interrupt_controller.sv
+	module worklib.interrupt_controller:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/LSU_RVX.sv
+	module worklib.LSU_RVX:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Memory_Ctrl.sv
+	module worklib.Memory_Ctrl:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/memtoreg_mux.sv
+	module worklib.memtoreg_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/pc_mux.sv
+	module worklib.pc_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Pipelined_M.sv
+	module worklib.Pipelined_M:sv
+		errors: 0, warnings: 0
+	module worklib.M1:sv
+		errors: 0, warnings: 0
+	module worklib.M2:sv
+		errors: 0, warnings: 0
+	module worklib.half_adder:sv
+		errors: 0, warnings: 0
+	module worklib.full_adder:sv
+		errors: 0, warnings: 0
+	module worklib.booth_encoder:sv
+		errors: 0, warnings: 0
+	module worklib.gp_cell:sv
+		errors: 0, warnings: 0
+	module worklib.cla4:sv
+		errors: 0, warnings: 0
+	module worklib.cla16:sv
+		errors: 0, warnings: 0
+	module worklib.cla64:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/register_file.sv
+	module worklib.register_file:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/sp_ram.sv
+	module worklib.sp_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Stage1.sv
+	module worklib.Stage1:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Stage2.sv
+	module worklib.Stage2:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/stall_controller.sv
+	module worklib.stall_controller:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_if.sv
+	interface worklib.corerv_if:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv
+  import uvm_pkg::*;
+               |
+ncvlog: *E,NOPBIND (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv,2|15): Package uvm_pkg could not be bound.
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv line 1, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 6)
+class corerv_seq_item extends uvm_sequence_item;
+                                              |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv,1|46): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv line 1, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 6)
+    `uvm_object_utils(corerv_seq_item)
+                                     |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv,2|37): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_object_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 6)
+    `uvm_object_utils(corerv_seq_item)
+                                     |
+ncvlog: *E,SVEXTK (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv,2|37): expecting a ';' (to terminate a type_declaration).
+(`define macro: m_uvm_object_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 6)
+    `uvm_object_utils(corerv_seq_item)
+                                     |
+ncvlog: *E,SVEXTK (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv,2|37): expecting a ';' (to terminate a type_declaration).
+(`define macro: m_uvm_object_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 6)
+    `uvm_object_utils(corerv_seq_item)
+                                     |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv,2|37): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_object_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 6)
+    `uvm_object_utils(corerv_seq_item)
+                                     |
+ncvlog: *E,EXPSMC (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv,2|37): expecting a semicolon (';') [10.3.1(IEEE)].
+(`define macro: m_uvm_object_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 6)
+    `uvm_object_utils(corerv_seq_item)
+                                     |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv,2|37): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_object_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 6)
+    `uvm_object_utils(corerv_seq_item)
+                                     |
+ncvlog: *E,EXPSMC (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv,2|37): expecting a semicolon (';') [10.3.1(IEEE)].
+(`define macro: m_uvm_object_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 439], `define macro: uvm_object_utils_begin [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 6)
+    `uvm_object_utils(corerv_seq_item)
+                                     |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv,2|37): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_object_create_func [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 409], `define macro: uvm_object_utils_begin [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 6)
+    `uvm_object_utils(corerv_seq_item)
+                                     |
+ncvlog: *E,EXPSMC (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv,2|37): expecting a semicolon (';') [10.3.1(IEEE)].
+(`define macro: m_uvm_object_create_func [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 409], `define macro: uvm_object_utils_begin [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 6)
+    `uvm_object_utils(corerv_seq_item)
+                                     |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv,2|37): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: uvm_field_utils_begin [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 151], `define macro: uvm_object_utils_begin [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 6)
+    `uvm_object_utils(corerv_seq_item)
+                                     |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv,2|37): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: uvm_field_utils_begin [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 151], `define macro: uvm_object_utils_begin [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 6)
+    `uvm_object_utils(corerv_seq_item)
+                                     |
+ncvlog: *E,MISEXX (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv,2|37): expecting an '=' or '<=' sign in an assignment [9.2(IEEE)].
+(`define macro: uvm_field_utils_begin [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 151], `define macro: uvm_object_utils_begin [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 253], `define macro: uvm_object_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 245], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 6)
+        super.new(name);
+            |
+ncvlog: *E,CLSSPX (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv,23|12): 'super' can only be used within a class scope that derives from a base class.
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv line 23, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 6)
+class corerv_driver extends uvm_driver #(corerv_seq_item);
+                                     |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,1|37): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 1, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+    `uvm_component_utils(corerv_driver)
+                                      |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,2|38): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_component_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+    `uvm_component_utils(corerv_driver)
+                                      |
+ncvlog: *E,SVEXTK (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,2|38): expecting a ';' (to terminate a type_declaration).
+(`define macro: m_uvm_component_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+    `uvm_component_utils(corerv_driver)
+                                      |
+ncvlog: *E,SVEXTK (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,2|38): expecting a ';' (to terminate a type_declaration).
+(`define macro: m_uvm_component_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+    `uvm_component_utils(corerv_driver)
+                                      |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,2|38): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_component_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+    `uvm_component_utils(corerv_driver)
+                                      |
+ncvlog: *E,EXPSMC (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,2|38): expecting a semicolon (';') [10.3.1(IEEE)].
+(`define macro: m_uvm_component_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+    `uvm_component_utils(corerv_driver)
+                                      |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,2|38): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_component_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+    `uvm_component_utils(corerv_driver)
+                                      |
+ncvlog: *E,EXPSMC (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,2|38): expecting a semicolon (';') [10.3.1(IEEE)].
+(`define macro: m_uvm_component_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+    function new(string name, uvm_component parent);
+                                          |
+ncvlog: *E,EXPRPA (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,9|42): expecting a right parenthesis (')') [A.2.6(IEEE)].
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 9, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+    function new(string name, uvm_component parent);
+                                          |
+ncvlog: *E,NOIPRT (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,9|42): Unrecognized declaration 'uvm_component' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 9, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+    function new(string name, uvm_component parent);
+                                          |
+ncvlog: *E,NOTINF (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,9|42): Interfaces are not allowed within tasks [SystemVerilog].
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 9, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+    function new(string name, uvm_component parent);
+                                                 |
+ncvlog: *E,ILLPDL (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,9|49): Mixing of ansi & non-ansi style port declaration is not legal.
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 9, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+    function new(string name, uvm_component parent);
+                                                  |
+ncvlog: *E,EXPSMC (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,9|50): expecting a semicolon (';') [12.3.2(IEEE)].
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 9, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+        super.new(name, parent);
+            |
+ncvlog: *E,EXPRPA (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,10|12): expecting a right parenthesis (')') [A.2.6(IEEE)].
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 10, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+    function void build_phase(uvm_phase phase);
+                                      |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,13|38): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 13, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+    task run_phase(uvm_phase phase);
+                           |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv,19|27): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv line 19, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 7)
+class corerv_monitor extends uvm_monitor;
+                                       |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,1|39): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 1, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    `uvm_component_utils(corerv_monitor)
+                                       |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,2|39): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_component_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    `uvm_component_utils(corerv_monitor)
+                                       |
+ncvlog: *E,SVEXTK (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,2|39): expecting a ';' (to terminate a type_declaration).
+(`define macro: m_uvm_component_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    `uvm_component_utils(corerv_monitor)
+                                       |
+ncvlog: *E,SVEXTK (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,2|39): expecting a ';' (to terminate a type_declaration).
+(`define macro: m_uvm_component_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    `uvm_component_utils(corerv_monitor)
+                                       |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,2|39): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_component_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    `uvm_component_utils(corerv_monitor)
+                                       |
+ncvlog: *E,EXPSMC (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,2|39): expecting a semicolon (';') [10.3.1(IEEE)].
+(`define macro: m_uvm_component_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    `uvm_component_utils(corerv_monitor)
+                                       |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,2|39): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`define macro: m_uvm_component_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    `uvm_component_utils(corerv_monitor)
+                                       |
+ncvlog: *E,EXPSMC (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,2|39): expecting a semicolon (';') [10.3.1(IEEE)].
+(`define macro: m_uvm_component_registry_internal [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 467], `define macro: uvm_component_utils [/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_object_defines.svh line 330], `include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 2, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    uvm_analysis_port #(corerv_seq_item) ap;
+                    |
+ncvlog: *E,EXPENC (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,7|20): Expecting the keyword 'endclass'.
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 7, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    function new(string name, uvm_component parent);
+               |
+ncvlog: *E,NEWOIC (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,9|15): The class constructor method 'new' is only allowed within a class declaration.
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 9, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    function new(string name, uvm_component parent);
+                                          |
+ncvlog: *E,EXPRPA (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,9|42): expecting a right parenthesis (')') [A.2.6(IEEE)].
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 9, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    function new(string name, uvm_component parent);
+                                          |
+ncvlog: *E,NOIPRT (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,9|42): Unrecognized declaration 'uvm_component' could be an unsupported keyword, a spelling mistake or missing instance port list '()' [SystemVerilog].
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 9, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    function new(string name, uvm_component parent);
+                                          |
+ncvlog: *E,NOTINF (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,9|42): Interfaces are not allowed within tasks [SystemVerilog].
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 9, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    function new(string name, uvm_component parent);
+                                                 |
+ncvlog: *E,ILLPDL (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,9|49): Mixing of ansi & non-ansi style port declaration is not legal.
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 9, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    function new(string name, uvm_component parent);
+                                                  |
+ncvlog: *E,EXPSMC (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,9|50): expecting a semicolon (';') [12.3.2(IEEE)].
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 9, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+        super.new(name, parent);
+            |
+ncvlog: *E,EXPRPA (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,10|12): expecting a right parenthesis (')') [A.2.6(IEEE)].
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 10, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    function void build_phase(uvm_phase phase);
+                                      |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,14|38): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 14, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+    task run_phase(uvm_phase phase);
+                           |
+ncvlog: *E,SVNOTY (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,24|27): Syntactically this identifier appears to begin a datatype but it does not refer to a visible datatype in the current scope.
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 24, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+        logic [31:0] last_pc = 32'hFFFF_FFFF;
+                             |
+ncvlog: *W,VARIST (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,26|29): Local static variable with initializer requires 'static' keyword.
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 26, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+endclass
+       |
+ncvlog: *E,EXPENP (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv,49|7): Expecting the keyword 'endpackage' [SystemVerilog].
+(`include file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv line 49, file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv line 8)
+	package worklib.corerv_pkg:sv
+		errors: 50, warnings: 1
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv
+import uvm_pkg::*;
+             |
+ncvlog: *E,NOPBIND (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv,3|13): Package uvm_pkg could not be bound.
+import corerv_pkg::*;
+                |
+ncvlog: *E,NOPBIND (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv,4|16): Package corerv_pkg could not be bound.
+	interface worklib.corerv_trace_if:sv
+		errors: 0, warnings: 0
+        uvm_config_db#(virtual corerv_if)::set(null, "uvm_test_top.env.agent.*", "vif", vif);
+                    |
+ncvlog: *E,NOPBIND (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv,77|20): Package uvm_config_db could not be bound.
+        uvm_config_db#(virtual corerv_trace_if)::set(null, "uvm_test_top.env.agent.*", "trace_vif", trace_vif);
+                    |
+ncvlog: *E,NOPBIND (/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv,80|20): Package uvm_config_db could not be bound.
+	module worklib.tb_top:sv
+		errors: 2, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 2, warnings: 0
+irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 1).
+make: *** [run] Error 1
