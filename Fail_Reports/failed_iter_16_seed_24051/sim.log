@@ -1,0 +1,644 @@
+--------------------------------------------------------
+ Starting UVM Simulation: corerv_test
+--------------------------------------------------------
+irun -clean -64bit -sv -uvm -access +rwc -svseed 24051 -coverage all -covoverwrite -covtest corerv_test /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/*.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_if.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv ./spike_wrapper.so +UVM_TESTNAME=corerv_test
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+irun: *N,CLEAN: Removing existing directory ./INCA_libs.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu_in1_mux.sv
+	module worklib.alu_in1_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu_in2_mux.sv
+	module worklib.alu_in2_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu_mul_csr_mux.sv
+	module worklib.alu_mul_csr_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/alu.sv
+	module worklib.alu:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Control_Unit.sv
+	module worklib.Control_Unit:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/CoreRV.sv
+	module worklib.CoreRV:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/csr_register_file.sv
+	module worklib.csr_register_file:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/csr_unit.sv
+	module worklib.csr_unit:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/data_ram.sv
+	module worklib.data_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/dp_ram.sv
+	module worklib.dp_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/immediate_generator.sv
+	module worklib.immediate_generator:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/instr_ram.sv
+	module worklib.instr_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/interrupt_controller.sv
+	module worklib.interrupt_controller:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/LSU_RVX.sv
+	module worklib.LSU_RVX:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Memory_Ctrl.sv
+	module worklib.Memory_Ctrl:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/memtoreg_mux.sv
+	module worklib.memtoreg_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/pc_mux.sv
+	module worklib.pc_mux:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Pipelined_M.sv
+	module worklib.Pipelined_M:sv
+		errors: 0, warnings: 0
+	module worklib.M1:sv
+		errors: 0, warnings: 0
+	module worklib.M2:sv
+		errors: 0, warnings: 0
+	module worklib.half_adder:sv
+		errors: 0, warnings: 0
+	module worklib.full_adder:sv
+		errors: 0, warnings: 0
+	module worklib.booth_encoder:sv
+		errors: 0, warnings: 0
+	module worklib.gp_cell:sv
+		errors: 0, warnings: 0
+	module worklib.cla4:sv
+		errors: 0, warnings: 0
+	module worklib.cla16:sv
+		errors: 0, warnings: 0
+	module worklib.cla64:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/register_file.sv
+	module worklib.register_file:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/sp_ram.sv
+	module worklib.sp_ram:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Stage1.sv
+	module worklib.Stage1:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/Stage2.sv
+	module worklib.Stage2:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/stall_controller.sv
+	module worklib.stall_controller:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_if.sv
+	interface worklib.corerv_if:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv
+	package worklib.corerv_pkg:sv
+		errors: 0, warnings: 0
+file: /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv
+	interface worklib.corerv_trace_if:sv
+		errors: 0, warnings: 0
+	module worklib.tb_top:sv
+		errors: 0, warnings: 0
+$CDSROOT = /home/install/INCISIVE152
+$TESTDIR = /home/user1/Darshan_Verification/Tanuja/core_uvm/sim
+
+TOOL:	ncsc(64)	15.20-s086
+make[1]: Entering directory `/home/user1/Darshan_Verification/Tanuja/core_uvm/sim'
+building library run.so
+make[1]: Leaving directory `/home/user1/Darshan_Verification/Tanuja/core_uvm/sim'
+
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	)dut (
+	   |
+ncelab: *W,CUVWSP (../tb/sv/tb_top.sv,54|4): 2 output ports were not connected:
+ncelab: (../rtl/CoreRV.sv,23): irq_ack_o
+ncelab: (../rtl/CoreRV.sv,24): irq_id_o
+
+	)dut (
+	   |
+ncelab: *W,CUVWSI (../tb/sv/tb_top.sv,54|4): 1 input port was not connected:
+ncelab: (../rtl/CoreRV.sv,22): irq_i
+
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		corerv_pkg
+		$unit_0x388f07e4
+		dp_ram
+		half_adder
+		tb_top
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+	Extracting FSMs for coverage:
+		worklib.dp_ram
+		worklib.half_adder
+		worklib.interrupt_controller
+		worklib.Memory_Ctrl
+		worklib.pc_mux
+		worklib.sp_ram
+		worklib.instr_ram
+		worklib.register_file
+		worklib.csr_register_file
+		worklib.Control_Unit
+		worklib.immediate_generator
+		worklib.Stage1
+		worklib.alu_in1_mux
+		worklib.alu_in2_mux
+		worklib.alu
+		worklib.csr_unit
+		worklib.booth_encoder
+		worklib.M1
+		worklib.full_adder
+		worklib.M2
+		worklib.gp_cell
+		worklib.cla4
+		worklib.cla16
+		worklib.cla64
+		worklib.Pipelined_M
+		worklib.alu_mul_csr_mux
+		worklib.Stage2
+		worklib.stall_controller
+		worklib.LSU_RVX
+			FSM extracted for state register state
+		worklib.data_ram
+		worklib.memtoreg_mux
+		worklib.CoreRV
+		worklib.tb_top
+	Total FSMs extracted = 1
+	Building instance overlay tables: ...................
+ncelab: *W,COVFHT: FSM hold transitions (transitions to the current state) are not extracted for any FSM in default mode.
+. Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+ncelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.Control_Unit:sv <0x516e4421>
+			streams:   2, words: 45026
+		worklib.CoreRV:sv <0x44afc559>
+			streams: 172, words: 138488
+		worklib.LSU_RVX:sv <0x249ae70a>
+			streams:  23, words: 28361
+		worklib.M1:sv <0x25e7b7fc>
+			streams:   9, words: 10028
+		worklib.M2:sv <0x4e5b01f7>
+			streams:   1, words:  1947
+		worklib.Memory_Ctrl:sv <0x41b0ca7c>
+			streams:   2, words:   892
+		worklib.Pipelined_M:sv <0x58f2ee22>
+			streams:  20, words: 12002
+		worklib.Stage1:sv <0x3b45b068>
+			streams:  59, words: 30039
+		worklib.Stage2:sv <0x3f9424eb>
+			streams:  36, words: 23688
+		worklib.alu:sv <0x0abf656e>
+			streams:   1, words:  8265
+		worklib.alu_in1_mux:sv <0x2c2313d7>
+			streams:   1, words:   850
+		worklib.alu_in2_mux:sv <0x21db1c70>
+			streams:   1, words:  1874
+		worklib.alu_mul_csr_mux:sv <0x74fc9279>
+			streams:   1, words:  1906
+		worklib.booth_encoder:sv <0x4f9a32d7>
+			streams:   1, words:  2872
+		worklib.cdns_assert2uvm_pkg:sv <0x09043a22>
+			streams:   3, words:  2639
+		worklib.cdns_uvm_pkg:sv <0x1daf05ff>
+			streams:   9, words:  6436
+		worklib.cdns_uvm_pkg:sv <0x4e72f769>
+			streams:  28, words: 46637
+		worklib.cdns_uvm_pkg:sv <0x5643060f>
+			streams:  10, words:  9567
+		worklib.cdns_uvm_pkg:sv <0x628da63b>
+			streams: 136, words: 297517
+		worklib.cdns_uvmapi:svp <0x4eeed3a9>
+			streams:  27, words: 38295
+		worklib.cla16:sv <0x57530f55>
+			streams:   2, words:   695
+		worklib.cla4:sv <0x13b5beb5>
+			streams:   1, words:   446
+		worklib.cla64:sv <0x4ef33033>
+			streams:   4, words:  1602
+		worklib.corerv_if:sv <0x321d1431>
+			streams:  22, words: 19268
+		worklib.corerv_pkg:sv <0x5e0b5c90>
+			streams:   0, words:     0
+		worklib.corerv_trace_if:sv <0x7a9e4019>
+			streams:  12, words:  5764
+		worklib.csr_register_file:sv <0x6a434408>
+			streams:  17, words: 12902
+		worklib.csr_unit:sv <0x75ac1d01>
+			streams:   1, words:  5521
+		worklib.data_ram:sv <0x14bb8eb7>
+			streams:   4, words:  9870
+		worklib.dp_ram:sv <0x2f0dff6d>
+			streams:  11, words:  9495
+		worklib.full_adder:sv <0x1f6ad9be>
+			streams:   0, words:     0
+		worklib.gp_cell:sv <0x4e334a19>
+			streams:   0, words:     0
+		worklib.half_adder:sv <0x4130fb25>
+			streams:   0, words:     0
+		worklib.immediate_generator:sv <0x3ac14e6c>
+			streams:   2, words:  5073
+		worklib.instr_ram:sv <0x31554902>
+			streams:  15, words: 24324
+		worklib.interrupt_controller:sv <0x2bae3d8b>
+			streams:   5, words:  4311
+		worklib.memtoreg_mux:sv <0x196d2fb1>
+			streams:   1, words:  1872
+		worklib.pc_mux:sv <0x75b34f3e>
+			streams:   1, words:  2849
+		worklib.register_file:sv <0x2521ba8a>
+			streams:   5, words:  4280
+		worklib.sp_ram:sv <0x29d2d672>
+			streams:   8, words:  4390
+		worklib.sp_ram:sv <0x356e5f83>
+			streams:   8, words:  4435
+		worklib.sp_ram:sv <0x73ecf674>
+			streams:   8, words:  4390
+		worklib.stall_controller:sv <0x1522e610>
+			streams:   6, words:  7194
+		worklib.tb_top:sv <0x2544df29>
+			streams: 155, words: 280972
+		worklib.uvm_pkg:sv <0x01ac61ef>
+			streams:  25, words: 62303
+		worklib.uvm_pkg:sv <0x01c266f6>
+			streams:   7, words:  3230
+		worklib.uvm_pkg:sv <0x0303f4ac>
+			streams:  26, words: 40358
+		worklib.uvm_pkg:sv <0x0318ca69>
+			streams:  27, words: 46271
+		worklib.uvm_pkg:sv <0x08afa72c>
+			streams:   7, words:  7967
+		worklib.uvm_pkg:sv <0x0901f621>
+			streams:  25, words: 64671
+		worklib.uvm_pkg:sv <0x0aeb521b>
+			streams:  27, words: 34211
+		worklib.uvm_pkg:sv <0x10642354>
+			streams: 181, words: 327214
+		worklib.uvm_pkg:sv <0x1726efbb>
+			streams: 177, words: 234728
+		worklib.uvm_pkg:sv <0x17c8d12f>
+			streams:   8, words:  9053
+		worklib.uvm_pkg:sv <0x1a30e58f>
+			streams:   7, words:  1863
+		worklib.uvm_pkg:sv <0x2b0a392b>
+			streams:  27, words: 55779
+		worklib.uvm_pkg:sv <0x2c0a262b>
+			streams:  16, words: 26899
+		worklib.uvm_pkg:sv <0x30e64862>
+			streams:   7, words:  3230
+		worklib.uvm_pkg:sv <0x32777b24>
+			streams:  26, words: 58656
+		worklib.uvm_pkg:sv <0x38cc6fc3>
+			streams: 4718, words: 10646212
+		worklib.uvm_pkg:sv <0x3a692af2>
+			streams:  17, words: 18882
+		worklib.uvm_pkg:sv <0x3ae1c94b>
+			streams:   7, words:  1863
+		worklib.uvm_pkg:sv <0x3c593d1a>
+			streams:  24, words: 27192
+		worklib.uvm_pkg:sv <0x3d07073e>
+			streams:  25, words: 71098
+		worklib.uvm_pkg:sv <0x3f4b8279>
+			streams:  27, words: 43114
+		worklib.uvm_pkg:sv <0x3fda9cfa>
+			streams:  38, words: 35012
+		worklib.uvm_pkg:sv <0x455f1483>
+			streams:  25, words: 63122
+		worklib.uvm_pkg:sv <0x461f6a3f>
+			streams:  24, words: 35572
+		worklib.uvm_pkg:sv <0x464bb1ed>
+			streams:  22, words: 69122
+		worklib.uvm_pkg:sv <0x4b9cc803>
+			streams:  27, words: 45373
+		worklib.uvm_pkg:sv <0x4c559598>
+			streams:  25, words: 67033
+		worklib.uvm_pkg:sv <0x4d39c312>
+			streams:   9, words:  5977
+		worklib.uvm_pkg:sv <0x4fbdddf7>
+			streams:  71, words: 154057
+		worklib.uvm_pkg:sv <0x4fc4b563>
+			streams:   9, words:  3363
+		worklib.uvm_pkg:sv <0x578ca5d9>
+			streams:  26, words: 42905
+		worklib.uvm_pkg:sv <0x5b4755cd>
+			streams:   8, words:  8608
+		worklib.uvm_pkg:sv <0x5c4e4353>
+			streams:  24, words: 29272
+		worklib.uvm_pkg:sv <0x5eac42e7>
+			streams:  38, words: 42107
+		worklib.uvm_pkg:sv <0x621d3b39>
+			streams:  23, words: 31599
+		worklib.uvm_pkg:sv <0x64712540>
+			streams:  24, words: 27660
+		worklib.uvm_pkg:sv <0x6852afd5>
+			streams:  28, words: 36794
+		worklib.uvm_pkg:sv <0x71e2ecfc>
+			streams:  29, words: 121967
+		worklib.uvm_pkg:sv <0x74bbdd05>
+			streams:  27, words: 48536
+		worklib.uvm_pkg:sv <0x74ffaeb0>
+			streams:   7, words:  2385
+		worklib.uvm_pkg:sv <0x77e26c66>
+			streams:  25, words: 69451
+		worklib.uvm_pkg:sv <0x7f3aebe1>
+			streams:   7, words:  3230
+  logic [DATA_WIDTH/8-1:0][7:0] mem[words];
+                                  |
+ncelab: *W,COVMDD (../rtl/sp_ram.sv,21|34): Toggle coverage for bit, logic, reg, wire, and struct multi-dimensional static arrays and vectors is not supported by default. To enable toggle coverage on for these types specify 'set_toggle_scoring -sv_mda [<max_bit_base2_exponent>] [-sv_mda_of_struct]' ccf command in the coverage configuration file.
+  integer i;
+          |
+ncelab: *W,COVUTA (../rtl/sp_ram.sv,25|10): Toggle coverage is not supported for SystemVerilog integer, real, string, dynamic array, sparse memory, and array of enum. It is also not supported for VHDL multi-dimensional array and array of record. There may also be other such objects in the design.
+ncelab: *W,COVNOEN: By default, toggle coverage is not supported for systemverilog enumerated nets and variables. To enable toggle coverage of these objects, specify the 'set_toggle_scoring -sv_enum' command in the coverage configuration file.
+	Building instance specific data structures.
+ncelab: *W,CGPIDF: Covergroup "per_instance" option , by default, is set as 0.
+ncelab: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                    1091      33
+		Interfaces:                    2       2
+		Verilog packages:              5       5
+		Registers:                 14477   10490
+		Scalar wires:               2475       -
+		Expanded wires:             2457      33
+		Vectored wires:              311       -
+		Named events:                  6      14
+		Always blocks:                98      64
+		Initial blocks:              289     160
+		Clocking blocks:               2       2
+		Clocking items:               13      13
+		Parallel blocks:              26      27
+		Cont. assignments:           138     120
+		Pseudo assignments:          230     224
+		Assertions:                    4       4
+		Covergroup Instances:          0       1
+		Compilation units:             1       1
+		SV Class declarations:       199     311
+		SV Class specializations:    385     385
+		Simulation timescale:        1ps
+	Writing initial simulation snapshot: worklib.dp_ram:sv
+Loading snapshot worklib.dp_ram:sv .................... Done
+SVSEED set from command line: 24051
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /home/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> source /home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+ncsim> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (15.20-s086)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test corerv_test...
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_test.sv(19) @ 0: uvm_test_top [TEST] CPU Test started. Running firmware...
+[DPI-C] Initializing Spike Golden Oracle at 0x80000000...
+[DPI-C] Firmware loaded. PC set to: 0x80000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 65000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000000 | INSTR: 0f700113] MATCH OK! -> Reg x30 = 0x80010000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 85000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000004 | INSTR: c5400213] MATCH OK! -> Reg x1 = 0x0000013e
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 95000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000008 | INSTR: 12a00293] MATCH OK! -> Reg x2 = 0x000000f7
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 105000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000000c | INSTR: 21a00313] MATCH OK! -> Reg x3 = 0x00000077
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 115000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000010 | INSTR: 19000393] MATCH OK! -> Reg x4 = 0xfffffc54
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 125000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000014 | INSTR: 36800413] MATCH OK! -> Reg x5 = 0x0000012a
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 135000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000018 | INSTR: 01500493] MATCH OK! -> Reg x6 = 0x0000021a
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 145000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000001c | INSTR: 340c7773] MATCH OK! -> Reg x7 = 0x00000190
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 155000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000020 | INSTR: 659148b7] MATCH OK! -> Reg x8 = 0x00000368
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 165000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000024 | INSTR: 43bcf917] MATCH OK! -> Reg x9 = 0x00000015
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 175000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000028 | INSTR: 008005ef] MATCH OK! -> Reg x14 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 185000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000002c | INSTR: 00000013] MATCH OK! -> Reg x17 = 0x65914000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 195000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000030 | INSTR: 00000000] MATCH OK! -> Reg x18 = 0xc3bcf030
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 205000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000034 | INSTR: 00000000] MATCH OK! -> Reg x11 = 0x80000038
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 245000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000003c | INSTR: 01a81693] MATCH OK! -> Reg x8 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 255000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000040 | INSTR: 2b5d8737] MATCH OK! -> Reg x15 = 0x7855b000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 265000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000044 | INSTR: 3400f5f3] MATCH OK! -> Reg x16 = 0x00000785
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 275000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000048 | INSTR: 015f1a23] MATCH OK! -> Reg x13 = 0x14000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 285000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000004c | INSTR: 34021773] MATCH OK! -> Reg x14 = 0x2b5d8000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 295000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000050 | INSTR: f3231db7] MATCH OK! -> Reg x11 = 0x65914000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 305000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000054 | INSTR: 02281b33] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 315000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000058 | INSTR: 34023cf3] MATCH OK! -> Reg x14 = 0x65914000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 325000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000005c | INSTR: 34023cf3] MATCH OK! -> Reg x27 = 0xf3231000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 355000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000060 | INSTR: bdf5e413] MATCH OK! -> Reg x22 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 365000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000064 | INSTR: 01630463] MATCH OK! -> Reg x25 = 0xfffffc54
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 375000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000068 | INSTR: 00130293] MATCH OK! -> Reg x6 = 0x00028000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 385000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000006c | INSTR: 018111b3] MATCH OK! -> Reg x8 = 0xfffffbdf
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 395000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000070 | INSTR: 004c55b3] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 405000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000074 | INSTR: 02b40233] MATCH OK! -> Reg x5 = 0x00028001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 415000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000078 | INSTR: 016f1823] MATCH OK! -> Reg x3 = 0x000000f7
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 425000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000007c | INSTR: 016f1823] MATCH OK! -> Reg x11 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 455000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000080 | INSTR: 00ce8a67] MATCH OK! -> Reg x4 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 465000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000084 | INSTR: 00000013] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 475000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000088 | INSTR: 00000000] MATCH OK! -> Reg x29 = 0x80000088
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 485000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000008c | INSTR: 00000000] MATCH OK! -> Reg x20 = 0x80000090
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 545000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000094 | INSTR: 340b2df3] MATCH OK! -> Reg x8 = 0x01680000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 555000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000098 | INSTR: 40d25d33] MATCH OK! -> Reg x26 = 0x90bc2098
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 565000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000009c | INSTR: f86bdab7] MATCH OK! -> Reg x28 = 0x6666309c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 575000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000a0 | INSTR: 01970c33] MATCH OK! -> Reg x27 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 585000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000a4 | INSTR: 3407ac73] MATCH OK! -> Reg x26 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 595000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000a8 | INSTR: 00f81713] MATCH OK! -> Reg x21 = 0xf86bd000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 605000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000ac | INSTR: fbbd1b37] MATCH OK! -> Reg x24 = 0x65913c54
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 615000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000b0 | INSTR: 0080016f] MATCH OK! -> Reg x24 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 625000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000b4 | INSTR: 00000013] MATCH OK! -> Reg x14 = 0x03c28000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 635000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000b8 | INSTR: 00000000] MATCH OK! -> Reg x22 = 0xfbbd1000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 645000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000bc | INSTR: 00000000] MATCH OK! -> Reg x2 = 0x800000c0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 705000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000c4 | INSTR: 000f0e03] MATCH OK! -> Reg x17 = 0x00000384
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 715000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000c8 | INSTR: 2c4b7b37] MATCH OK! -> Reg x13 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 725000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000cc | INSTR: 340526f3] MATCH OK! -> Reg x5 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 735000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000d0 | INSTR: 018b1333] MATCH OK! -> Reg x28 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 745000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000d4 | INSTR: 4057d713] MATCH OK! -> Reg x22 = 0x2c4b7000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 755000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000d8 | INSTR: 0039d313] MATCH OK! -> Reg x13 = 0x7855b000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 765000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000dc | INSTR: 00cf5483] MATCH OK! -> Reg x6 = 0x2c4b7000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 775000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000e0 | INSTR: 014f0483] MATCH OK! -> Reg x14 = 0x03c2ad80
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 785000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000e4 | INSTR: 019c39b3] MATCH OK! -> Reg x6 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 795000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000e8 | INSTR: 01bad113] MATCH OK! -> Reg x9 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 805000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000ec | INSTR: 340a5673] MATCH OK! -> Reg x9 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 815000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000f0 | INSTR: 0d672237] MATCH OK! -> Reg x19 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 825000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000f4 | INSTR: 012bfb33] MATCH OK! -> Reg x2 = 0x0000001f
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 835000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000f8 | INSTR: 008004ef] MATCH OK! -> Reg x12 = 0x7855b000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 845000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000fc | INSTR: 00000013] MATCH OK! -> Reg x4 = 0x0d672000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 855000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000100 | INSTR: 00000000] MATCH OK! -> Reg x22 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 865000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000104 | INSTR: 00000000] MATCH OK! -> Reg x9 = 0x80000108
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 905000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000010c | INSTR: 340c9bf3] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 915000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000110 | INSTR: 030c0db3] MATCH OK! -> Reg x6 = 0x03c2ad81
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 925000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000114 | INSTR: 03541133] MATCH OK! -> Reg x18 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 935000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000118 | INSTR: 03541133] MATCH OK! -> Reg x23 = 0x00000014
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 965000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000011c | INSTR: 34051bf3] MATCH OK! -> Reg x27 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 995000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000120 | INSTR: 010f2d83] MATCH OK! -> Reg x2 = 0xfff5579c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1005000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000124 | INSTR: 41ccdcb3] MATCH OK! -> Reg x23 = 0xfffffc54
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1015000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000128 | INSTR: 00ff2c23] MATCH OK! -> Reg x22 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1025000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000012c | INSTR: 3401dc73] MATCH OK! -> Reg x27 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1035000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000130 | INSTR: 340d12f3] MATCH OK! -> Reg x25 = 0xfffffc54
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 1045000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000134 | INSTR: 4794ac13] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1055000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000138 | INSTR: 9c4e6c37] MATCH OK! -> Reg x24 = 0x03c2ad80
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1065000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000013c | INSTR: 00000e97] MATCH OK! -> Reg x5 = 0x00000003
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1075000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000140 | INSTR: 00ce8de7] MATCH OK! -> Reg x24 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1085000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000144 | INSTR: 00000013] MATCH OK! -> Reg x24 = 0x9c4e6000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1095000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000148 | INSTR: 00000000] MATCH OK! -> Reg x29 = 0x80000148
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1105000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000014c | INSTR: 00000000] MATCH OK! -> Reg x27 = 0x80000150
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1145000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000154 | INSTR: 9e592897] MATCH OK! -> Reg x6 = 0x5ec2d000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1155000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000158 | INSTR: 9e592897] MATCH OK! -> Reg x11 = 0xffff1500
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1185000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000015c | INSTR: 008004ef] MATCH OK! -> Reg x2 = 0x00a9387f
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1195000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000160 | INSTR: 00000013] MATCH OK! -> Reg x17 = 0x1e592160
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1205000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000164 | INSTR: 00000000] MATCH OK! -> Reg x22 = 0xff55dc81
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1215000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000168 | INSTR: 00000000] MATCH OK! -> Reg x9 = 0x8000016c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1255000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000170 | INSTR: 00000013] MATCH OK! -> Reg x10 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1265000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000174 | INSTR: 00000000] MATCH OK! -> Reg x29 = 0x80000174
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1275000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000178 | INSTR: 00000000] MATCH OK! -> Reg x3 = 0x8000017c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1315000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000180 | INSTR: 01146463] MATCH OK! -> Reg x13 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1325000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000184 | INSTR: 00140713] MATCH OK! -> Reg x3 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1335000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000188 | INSTR: 00000000] MATCH OK! -> Reg x12 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 1345000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000018c | INSTR: 00000000] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1405000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000194 | INSTR: aa537593] MATCH OK! -> Reg x19 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1415000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000198 | INSTR: 01b0de13] MATCH OK! -> Reg x4 = 0x00000005
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1425000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000019c | INSTR: b2a70d93] MATCH OK! -> Reg x7 = 0xfffffd8e
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1435000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001a0 | INSTR: e41f62b7] MATCH OK! -> Reg x11 = 0x5ec2d000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1445000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001a4 | INSTR: 58a61997] MATCH OK! -> Reg x28 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1455000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001a8 | INSTR: 014f4983] MATCH OK! -> Reg x27 = 0x03c2a8aa
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1465000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001ac | INSTR: 34056af3] MATCH OK! -> Reg x5 = 0xe41f6000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1475000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001b0 | INSTR: 1fe94097] MATCH OK! -> Reg x19 = 0xd8a611b0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1485000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001b4 | INSTR: 01d65893] MATCH OK! -> Reg x19 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1495000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001b8 | INSTR: 5666a413] MATCH OK! -> Reg x21 = 0xf86bd000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1505000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001bc | INSTR: 03ac1433] MATCH OK! -> Reg x1 = 0x9fe941bc
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1515000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001c0 | INSTR: 01862bb3] MATCH OK! -> Reg x17 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1525000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001c4 | INSTR: 01862bb3] MATCH OK! -> Reg x8 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1555000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001c8 | INSTR: 00bf1623] MATCH OK! -> Reg x8 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1565000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001cc | INSTR: 013f2423] MATCH OK! -> Reg x23 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1575000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001d0 | INSTR: 00cbe463] MATCH OK! -> Reg x22 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 1585000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001d4 | INSTR: 001b8b93] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 1595000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001d8 | INSTR: 005dc463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 1605000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001dc | INSTR: 001d8713] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1615000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001e0 | INSTR: 340228f3] MATCH OK! -> Reg x23 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 1625000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001e4 | INSTR: 41f25993] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1635000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001e8 | INSTR: 00448463] MATCH OK! -> Reg x14 = 0x03c2a8ab
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1645000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001ec | INSTR: 00148d93] MATCH OK! -> Reg x17 = 0xf86bd00a
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1655000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001f0 | INSTR: 01b98463] MATCH OK! -> Reg x19 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 1665000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001f4 | INSTR: 00198293] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1675000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001f8 | INSTR: f5387393] MATCH OK! -> Reg x27 = 0x8000016d
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 1685000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001fc | INSTR: 08cdf397] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1695000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000200 | INSTR: 34036bf3] MATCH OK! -> Reg x5 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1705000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000204 | INSTR: 02350c33] MATCH OK! -> Reg x7 = 0x00000701
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1715000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000208 | INSTR: 340decf3] MATCH OK! -> Reg x7 = 0x88cdf208
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1725000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000020c | INSTR: 340decf3] MATCH OK! -> Reg x23 = 0xf86bd00f
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1755000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000210 | INSTR: 00688463] MATCH OK! -> Reg x24 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1765000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000214 | INSTR: 00188293] MATCH OK! -> Reg x25 = 0xf86bd00f
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1775000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000218 | INSTR: 00800b6f] MATCH OK! -> Reg x11 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 1785000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000021c | INSTR: 00000013] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1795000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000220 | INSTR: 00000000] MATCH OK! -> Reg x5 = 0xf86bd00b
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1805000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000224 | INSTR: 00000000] MATCH OK! -> Reg x22 = 0x80000228
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1845000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000022c | INSTR: 00120e13] MATCH OK! -> Reg x11 = 0x80000090
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1855000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000230 | INSTR: 34057273] MATCH OK! -> Reg x18 = 0x3cdcb000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 1865000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000234 | INSTR: 3404faf3] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1875000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000238 | INSTR: 0054de13] MATCH OK! -> Reg x28 = 0x00000006
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1885000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000023c | INSTR: 415b0233] MATCH OK! -> Reg x4 = 0xf86bd01f
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1895000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000240 | INSTR: 0080036f] MATCH OK! -> Reg x21 = 0xf86bd015
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1905000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000244 | INSTR: 00000013] MATCH OK! -> Reg x28 = 0x0400000b
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1915000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000248 | INSTR: 00000000] MATCH OK! -> Reg x4 = 0x87943213
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1925000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000024c | INSTR: 00000000] MATCH OK! -> Reg x6 = 0x80000250
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1965000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000254 | INSTR: 01cf1823] MATCH OK! -> Reg x3 = 0xe6d55254
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1975000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000258 | INSTR: 0103f463] MATCH OK! -> Reg x13 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 1985000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000025c | INSTR: 00138513] MATCH OK! -> Reg x27 = 0xf86bd014
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 1995000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000260 | INSTR: 00000000] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 2005000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000264 | INSTR: 00000000] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2045000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000026c | INSTR: 00000e97] MATCH OK! -> Reg x23 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2055000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000270 | INSTR: 00ce83e7] MATCH OK! -> Reg x23 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2065000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000274 | INSTR: 00000013] MATCH OK! -> Reg x9 = 0xf86bd016
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2075000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000278 | INSTR: 00000000] MATCH OK! -> Reg x29 = 0x80000278
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2085000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000027c | INSTR: 00000000] MATCH OK! -> Reg x7 = 0x80000280
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2125000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000284 | INSTR: 00000000] MATCH OK! -> Reg x8 = 0x80000288
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2165000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000028c | INSTR: 01af2023] MATCH OK! -> Reg x4 = 0xfed8a000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2175000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000290 | INSTR: 0130c133] MATCH OK! -> Reg x21 = 0x07942fa7
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2185000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000294 | INSTR: 00985613] MATCH OK! -> Reg x3 = 0xff56c493
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 2195000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000298 | INSTR: 01b09b93] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2205000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000029c | INSTR: 9f2d8093] MATCH OK! -> Reg x2 = 0x9fe941bc
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2215000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002a0 | INSTR: 0073d093] MATCH OK! -> Reg x12 = 0x00000003
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2225000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002a4 | INSTR: 1038f193] MATCH OK! -> Reg x23 = 0xe0000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2235000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002a8 | INSTR: 00cf4583] MATCH OK! -> Reg x1 = 0xf86bca06
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2245000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002ac | INSTR: 00ebc463] MATCH OK! -> Reg x1 = 0x01000005
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2255000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002b0 | INSTR: 001b8513] MATCH OK! -> Reg x3 = 0x00000002
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2265000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002b4 | INSTR: 00000000] MATCH OK! -> Reg x11 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 2275000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002b8 | INSTR: 00000000] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2315000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002c0 | INSTR: 00000e97] MATCH OK! -> Reg x4 = 0x786bd016
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2325000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002c4 | INSTR: 00000e97] MATCH OK! -> Reg x17 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2355000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002c8 | INSTR: 00000013] MATCH OK! -> Reg x25 = 0x3ffffdc4
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2365000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002cc | INSTR: 00000000] MATCH OK! -> Reg x29 = 0x800002cc
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2375000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002d0 | INSTR: 00000000] MATCH OK! -> Reg x7 = 0x800002d4
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2415000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002d8 | INSTR: 00000000] MATCH OK! -> Reg x29 = 0x800002d8
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2425000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002dc | INSTR: 00000000] MATCH OK! -> Reg x23 = 0x800002e0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2465000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002e4 | INSTR: 093a2513] MATCH OK! -> Reg x11 = 0x7a6322e4
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2495000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002e8 | INSTR: 00821213] MATCH OK! -> Reg x21 = 0x3ffffe74
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2505000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002ec | INSTR: 00cf5303] MATCH OK! -> Reg x10 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2515000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002f0 | INSTR: 00b6e463] MATCH OK! -> Reg x10 = 0x800006d4
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2525000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002f4 | INSTR: 00168113] MATCH OK! -> Reg x4 = 0x6bd01600
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2535000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002f8 | INSTR: 00000000] MATCH OK! -> Reg x6 = 0x0000d000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 2545000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002fc | INSTR: 00000000] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2585000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000304 | INSTR: 1113f337] MATCH OK! -> Reg x3 = 0xe41bb000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2595000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000308 | INSTR: 6f7cab37] MATCH OK! -> Reg x2 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2605000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000030c | INSTR: 033493b3] MATCH OK! -> Reg x19 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2615000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000310 | INSTR: 8bb36a93] MATCH OK! -> Reg x6 = 0x1113f000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2625000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000314 | INSTR: 8bb36a93] MATCH OK! -> Reg x22 = 0x6f7ca000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2655000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000318 | INSTR: 00128593] MATCH OK! -> Reg x7 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2665000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000031c | INSTR: 031210b3] MATCH OK! -> Reg x21 = 0xfffff8bb
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(39) @ 2675000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000320 | INSTR: 01225333] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(35) @ 2685000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000324 | INSTR: 01225333] MATCH OK! -> Reg x11 = 0xf86bd00c
+[SCB DEBUG] Data Mismatch! Reg: x1 | RTL Val: 0x5799 | Spike Val: 0x0
+UVM_FATAL /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(29) @ 2715000: uvm_test_top.env.scb [SCB_MISMATCH] Mismatch at PC: 80000328 | INSTR: 2b5df4b7 | Reg: x1 | RTL Val: 00005799
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  187
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    1
+** Report counts by id
+[RNTST]     1
+[SCB_MATCH]   185
+[SCB_MISMATCH]     1
+[TEST]     1
+Simulation complete via $finish(1) at time 2715 NS + 11
+/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_report_object.svh:292     $finish;
+ncsim> exit
+ncsim: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+ncsim: *W,CGDEFN: Default name "worklib.uvm_pkg::.cg_rv32im" will be generated for covergroup instance "cg_rv32im" as the name of the covergroup instance is not specified explicitly: ../tb/sv/corerv_coverage.sv, 7.
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  dp_ram(dp_ram)
+  dutinst  :  half_adder(half_adder)
+  dutinst  :  tb_top(tb_top)
+  scope    :  scope
+  testname :  corerv_test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_1838ec4b_42774d2a.ucm (reused)
+  data               :  ./cov_work/scope/corerv_test/icc_1838ec4b_42774d2a.ucd
