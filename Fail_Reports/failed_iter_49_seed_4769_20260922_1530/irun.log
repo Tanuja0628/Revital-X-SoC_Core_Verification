@@ -1,0 +1,20 @@
+irun(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s086: Started on Sep 28, 2026 at 15:22:57 IST
+irun
+	-clean
+	-64bit
+	-sv
+	-uvm
+	-access +rwc
+	-svseed 4769
+	-coverage all
+	-covoverwrite
+	-covtest corerv_test
+	/home/user1/Darshan_Verification/Tanuja/core_uvm/rtl/*.sv
+	/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_if.sv
+	/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv
+	/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv
+	./spike_wrapper.so
+	+UVM_TESTNAME=corerv_test
+irun: *E,FILEMIS: Cannot find the provided file ./spike_wrapper.so.
+TOOL:	irun(64)	15.20-s086: Exiting on Sep 28, 2026 at 15:22:57 IST  (total: 00:00:00)
