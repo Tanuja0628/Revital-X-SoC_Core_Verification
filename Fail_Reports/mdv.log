@@ -1,0 +1,2 @@
+09:49:09:0455 [com.cadence.mdv.imc.Main] [main] INFO  - Binding debug tools http on port: 40343
+09:49:09:0496 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool] ERROR - Merge output directory cov_work/scope/merged_regression could not be created because either the parent directory does not exist, or the parent directory has no write permission. Make sure that the parent directory exists and has write permission before you rerun the command.
