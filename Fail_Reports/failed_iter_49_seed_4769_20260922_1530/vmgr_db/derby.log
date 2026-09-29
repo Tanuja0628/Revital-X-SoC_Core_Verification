@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+Mon Sep 28 15:26:12 IST 2026:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.1 - (1616546): instance a816c00e-01a0-e771-8620-ffffb1569adb 
+on database directory /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/Fail_Reports/failed_iter_49_seed_4769_20260922_1530/vmgr_db/vmgr.db with class loader sun.misc.Launcher$AppClassLoader@12edcd21 
+Loaded from file:/home/install/INCISIVE152/tools.lnx86/vmgr/java/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_40-b26
+user.dir=/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/Fail_Reports/failed_iter_49_seed_4769_20260922_1530
+os.name=Linux
+os.arch=amd64
+os.version=3.10.0-1160.el7.x86_64
+derby.system.home=/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/Fail_Reports/failed_iter_49_seed_4769_20260922_1530/vmgr_db
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Sep 28 15:27:16 IST 2026:
+Shutting down instance a816c00e-01a0-e771-8620-ffffb1569adb on database directory /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/Fail_Reports/failed_iter_49_seed_4769_20260922_1530/vmgr_db/vmgr.db with class loader sun.misc.Launcher$AppClassLoader@12edcd21 
