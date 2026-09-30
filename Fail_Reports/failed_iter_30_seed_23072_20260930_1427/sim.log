@@ -1,0 +1,698 @@
+--------------------------------------------------------
+ Compiling UVM Testbench with Synopsys VCS
+--------------------------------------------------------
+vcs -full64 -sverilog -ntb_opts uvm -debug_access+all -kdb -timescale=1ns/1ps +lint=TFIPC-L -cm line+cond+fsm+tgl+branch -cm_dir ./coverage.vdb /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/*.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_if.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv ./spike_wrapper.so
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+                         Chronologic VCS (TM)
+         Version U-2023.03_Full64 -- Wed Sep 30 14:34:27 2026
+
+                    Copyright (c) 1991 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_pkg.sv'
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/macros/uvm_version_defines.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/macros/snps_macros.svp'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/macros/uvm_message_defines.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/macros/uvm_phase_defines.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/macros/uvm_object_defines.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/macros/uvm_printer_defines.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/macros/uvm_tlm_defines.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/macros/uvm_tlm_defines.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/macros/uvm_sequence_defines.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/macros/uvm_callback_defines.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/macros/uvm_reg_defines.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/macros/uvm_deprecated_defines.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/directc/uvm_directc.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/directc/uvm_seed.vh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/directc/uvm_directc.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/dpi/uvm_hdl.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/dpi/uvm_svcmd_dpi.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/dpi/uvm_regex.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/dpi/uvm_dpi.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_version.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_object_globals.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_misc.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_object.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_pool.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_queue.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_factory.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_registry.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_spell_chkr.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_resource.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/deprecated/uvm_resource_converter.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_resource_specializations.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_resource_db.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_config_db.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_printer.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_comparer.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_packer.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_recorder.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_event_callback.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_event.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_barrier.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_callback.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_callback.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_report_catcher.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_report_server.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_report_handler.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_report_object.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_transaction.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_phase.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_domain.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_bottomup_phase.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_topdown_phase.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_task_phase.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_common_phases.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_runtime_phases.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_component.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_root.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_component.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_objection.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_heartbeat.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_globals.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_cmdline_processor.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_base.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm_ifs.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_sqr_ifs.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_port_base.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_imps.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_ports.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_exports.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_analysis_port.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm_fifo_base.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm_fifos.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm_req_rsp.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_sqr_connections.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm1/uvm_tlm.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_pair.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_policies.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_in_order_comparator.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_algorithmic_comparator.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_random_stimulus.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_subscriber.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_monitor.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_driver.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_push_driver.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_scoreboard.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_agent.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_env.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_test.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/comps/uvm_comps.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_sequence_item.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_sequencer_base.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_sequencer_analysis_fifo.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_sequencer_param_base.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_sequencer.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_push_sequencer.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_sequence_base.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_sequence.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_sequence_library.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_sequence_builtin.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/seq/uvm_seq.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2_defines.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2_time.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2_generic_payload.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2_ifs.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2_imps.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2_ports.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2_exports.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2_sockets_base.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2_sockets.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/tlm2/uvm_tlm2.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_item.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_adapter.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_predictor.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_sequence.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_cbs.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_backdoor.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_field.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_vreg_field.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_indirect.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_fifo.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_file.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_mem_mam.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_vreg.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_mem.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_map.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_block.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/sequences/uvm_reg_hw_reset_seq.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/sequences/uvm_reg_bit_bash_seq.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/sequences/uvm_mem_walk_seq.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/sequences/uvm_mem_access_seq.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/sequences/uvm_reg_access_seq.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/sequences/uvm_reg_mem_shared_access_seq.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/sequences/uvm_reg_mem_built_in_seq.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/snps_uvm_reg_bank.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/reg/uvm_reg_model.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/vcs/vcs_uvm_alt.sv'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_pkg.sv'.
+Parsing design file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/vcs/msglog.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/vcs/uvm_msglog_report_server.sv'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/vcs/uvm_vcs_recorder.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/vcs/uvm_vcs_record_interface.sv'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing design file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_verdi_recorder.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_verdi_recorder.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_verdi_reg_map_recording.sv'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_verdi_message_catcher.svh'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_verdi_message_catcher.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/./dpi/uvm_verdi_dpi.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_verdi_reg_recording.sv'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/install/synopsys_tools/verdi/verdi/U-2023.03-SP1/share/PLI/VCS/include/verdi_trans_recorder_dpi.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_verdi_pli.svh'.
+Back to file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing design file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu_in1_mux.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu_in2_mux.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu_mul_csr_mux.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Control_Unit.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/CoreRV.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/csr_register_file.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/csr_unit.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/data_ram.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/dp_ram.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/immediate_generator.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/instr_ram.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/interrupt_controller.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/LSU_RVX.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Memory_Ctrl.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/memtoreg_mux.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/pc_mux.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Pipelined_M.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/register_file.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/sp_ram.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Stage1.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Stage2.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/stall_controller.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_if.sv'
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv'
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Back to file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv'.
+Parsing included file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_seq_item.sv'.
+Back to file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv'.
+Parsing included file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_driver.sv'.
+Back to file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv'.
+Parsing included file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv'.
+Back to file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv'.
+Parsing included file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_coverage.sv'.
+Back to file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv'.
+Parsing included file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_agent.sv'.
+Back to file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv'.
+Parsing included file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv'.
+Back to file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv'.
+Parsing included file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_env.sv'.
+Back to file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv'.
+Parsing included file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_test.sv'.
+Back to file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_pkg.sv'.
+Parsing design file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv'
+Parsing included file '/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_macros.svh'.
+Back to file '/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv'.
+Top Level Modules:
+       uvm_custom_install_recording
+       uvm_custom_install_verdi_recording
+       dp_ram
+       half_adder
+       tb_top
+TimeScale is 1 ns / 1 ps
+
+Warning-[PCWM-W] Port connection width mismatch
+/home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/tb_top.sv, 79
+"CoreRV #(32'h80000000, 32'h80004000, 32'h80010000, 32'h80020000, , , , , , , , , , , , ) dut( .clk (clk),  .rst (rst),  .data_addr_o (tb_top.vif.data_addr),  .data_wdata_o (tb_top.vif.data_wdata),  .data_we_o (tb_top.vif.data_we),  .data_req_o (tb_top.vif.data_req),  .data_be_o (tb_top.vif.data_be),  .data_rdata_i (tb_top.vif.data_rdata),  .data_gnt_i (tb_top.vif.data_gnt),  .data_rvalid_i (tb_top.vif.data_rvalid),  .irq_i (1'b0));"
+  The following 1-bit expression is connected to 32-bit port "irq_i" of module
+  "CoreRV", instance "dut".
+  Expression: 1'b0
+  Instantiated module defined at: 
+  "/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/CoreRV.sv",
+  2
+  Use +lint=PCWM for more details.
+
+VCS Coverage Metrics Release U-2023.03_Full64 Copyright (c) 1991-2023 by Synopsys Inc.
+Starting vcs inline pass...
+33 modules and 0 UDP read.
+recompiling module uvm_custom_install_verdi_recording
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+make[1]: Entering directory `/home/user1/Darshan_Verification/Tanuja/core_uvm/sim/csrc'
+make[1]: Leaving directory `/home/user1/Darshan_Verification/Tanuja/core_uvm/sim/csrc'
+make[1]: Entering directory `/home/user1/Darshan_Verification/Tanuja/core_uvm/sim/csrc'
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib -L/home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1 uvm_dpi.o uvm_verdi_dpi.o   objs/amcQw_d.o   _28761_archive_1.so _prev_archive_1.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs spike_wrapper.so    -lvcsnew -lsimprofile -lreader_common /home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib/libBA.a -luclinative /home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive       ./../simv.daidir/vc_hdrs.o  _vcs_pli_stub_.o   /home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib/vcs_save_restore_new.o /home/install/synopsys_tools/verdi/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/home/user1/Darshan_Verification/Tanuja/core_uvm/sim/csrc'
+CPU time: 4.155 seconds to compile + .227 seconds to elab + .312 seconds to link
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+--------------------------------------------------------
+ Starting UVM Simulation: corerv_test
+--------------------------------------------------------
+./simv +UVM_TESTNAME=corerv_test +ntb_random_seed=23072 -cm line+cond+fsm+tgl+branch -cm_name corerv_test -cm_dir ./coverage.vdb -l sim_corerv_test.log
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03_Full64; Runtime version U-2023.03_Full64;  Sep 30 14:34 2026
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+
+ VCS Coverage Metrics Release U-2023.03_Full64 Copyright (c) 1991-2023 by Synopsys Inc.
+UVM_INFO @ 0: reporter [RNTST] Running test corerv_test...
+*Verdi* Loading libsscore_vcs202303.so
+FSDB Dumper for VCS, Release Verdi_U-2023.03-SP1, Linux x86_64/64bit, 05/28/2023
+(C) 1996 - 2023 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* FSDB WARNING: Simv_lock file is locked (inter.fsdb.slock). Attempt to overwrite the FSDB (inter.fsdb.slock) which is currently written by other process is not permitted
+*Verdi* ERROR: Failed to create FSDB file: 'inter.fsdb'.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'novas.fsdb'
+*Verdi* : Begin traversing the scope (tb_top), layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the SVA assertions, layer (0).
+*Verdi* : End of traversing the SVA assertions.
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_monitor.sv(41) @ 0: uvm_test_top.env.agent.mon [MON_MEM] Loaded firmware into monitor memory map from firmware.hex
+[DPI-C] Initializing Spike Golden Oracle at 0x80000000...
+[DPI-C] Firmware loaded. PC set to: 0x80000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_test.sv(19) @ 0: uvm_test_top [TEST] CPU Test started. Running firmware...
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 65000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000000 | INSTR: 80010f37] MATCH OK! -> Reg x30 = 0x80010000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 85000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000004 | INSTR: 36e00093] MATCH OK! -> Reg x1 = 0x0000036e
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 95000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000008 | INSTR: 09100113] MATCH OK! -> Reg x2 = 0x00000091
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 105000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000000c | INSTR: 25300193] MATCH OK! -> Reg x3 = 0x00000253
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 115000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000010 | INSTR: ffd00213] MATCH OK! -> Reg x4 = 0xfffffffd
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 125000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000014 | INSTR: eaa00293] MATCH OK! -> Reg x5 = 0xfffffeaa
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 135000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000018 | INSTR: eab00313] MATCH OK! -> Reg x6 = 0xfffffeab
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 145000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000001c | INSTR: 33300393] MATCH OK! -> Reg x7 = 0x00000333
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 155000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000020 | INSTR: 10800413] MATCH OK! -> Reg x8 = 0x00000108
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 165000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000024 | INSTR: 24100493] MATCH OK! -> Reg x9 = 0x00000241
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 175000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000028 | INSTR: 00df0423] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 185000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000002c | INSTR: 340466f3] MATCH OK! -> Reg x13 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 195000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000030 | INSTR: 01a5da93] MATCH OK! -> Reg x21 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 205000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000034 | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x80000034
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 215000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000038 | INSTR: 00ce8be7] MATCH OK! -> Reg x23 = 0x8000003c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 255000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000040 | INSTR: 4027d433] MATCH OK! -> Reg x8 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 265000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000044 | INSTR: 01a268b3] MATCH OK! -> Reg x17 = 0xfffffffd
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 275000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000048 | INSTR: 0155d833] MATCH OK! -> Reg x16 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 285000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000004c | INSTR: 34021773] MATCH OK! -> Reg x14 = 0x00000008
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 295000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000050 | INSTR: 340a2273] MATCH OK! -> Reg x4 = 0xfffffffd
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 305000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000054 | INSTR: 00ca9463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 315000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000058 | INSTR: 001a8213] MATCH OK! -> Reg x4 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 325000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000005c | INSTR: 340cd0f3] MATCH OK! -> Reg x1 = 0xfffffffd
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 355000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000060 | INSTR: 025a0bb3] MATCH OK! -> Reg x23 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 365000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000064 | INSTR: 340425f3] MATCH OK! -> Reg x11 = 0x00000019
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 375000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000068 | INSTR: 3404f6f3] MATCH OK! -> Reg x13 = 0x00000019
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 385000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000006c | INSTR: 003cd813] MATCH OK! -> Reg x16 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 395000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000070 | INSTR: 406d5e13] MATCH OK! -> Reg x28 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 405000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000074 | INSTR: 00f36463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 415000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000078 | INSTR: 00130293] MATCH OK! -> Reg x5 = 0xfffffeac
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 445000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000007c | INSTR: 021d0d33] MATCH OK! -> Reg x26 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 455000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000080 | INSTR: 0052de13] MATCH OK! -> Reg x28 = 0x07fffff5
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 465000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000084 | INSTR: d9416593] MATCH OK! -> Reg x11 = 0xfffffd95
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 475000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000088 | INSTR: 340635f3] MATCH OK! -> Reg x11 = 0x00000010
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 485000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000008c | INSTR: 340ab773] MATCH OK! -> Reg x14 = 0x00000010
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 495000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000090 | INSTR: 2d05e813] MATCH OK! -> Reg x16 = 0x000002d0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 505000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000094 | INSTR: 01e2d613] MATCH OK! -> Reg x12 = 0x00000003
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 535000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000098 | INSTR: 02e415b3] MATCH OK! -> Reg x11 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 545000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000009c | INSTR: 0114f633] MATCH OK! -> Reg x12 = 0x00000241
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 555000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000a0 | INSTR: 5c7155b7] MATCH OK! -> Reg x11 = 0x5c715000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 565000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000a4 | INSTR: f58178b7] MATCH OK! -> Reg x17 = 0xf5817000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 575000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000a8 | INSTR: 00440db3] MATCH OK! -> Reg x27 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 585000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000ac | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x800000ac
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 595000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000b0 | INSTR: 00ce8567] MATCH OK! -> Reg x10 = 0x800000b4
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 655000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000b8 | INSTR: 023c0ab3] MATCH OK! -> Reg x21 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 665000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000bc | INSTR: 3402d1f3] MATCH OK! -> Reg x3 = 0x00000010
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 675000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000c0 | INSTR: 53d23e37] MATCH OK! -> Reg x28 = 0x53d23000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 685000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000c4 | INSTR: 340a3c73] MATCH OK! -> Reg x24 = 0x00000005
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 695000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000c8 | INSTR: 01a1d463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 735000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000d0 | INSTR: 00d36463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 745000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000d4 | INSTR: 00130593] MATCH OK! -> Reg x11 = 0xfffffeac
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 755000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000d8 | INSTR: 3401a4f3] MATCH OK! -> Reg x9 = 0x00000005
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 765000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000dc | INSTR: 3404d873] MATCH OK! -> Reg x16 = 0x00000015
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 775000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000e0 | INSTR: 3409f6f3] MATCH OK! -> Reg x13 = 0x00000009
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 785000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000e4 | INSTR: e98d0b93] MATCH OK! -> Reg x23 = 0xfffffe98
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 795000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000e8 | INSTR: 010f1023] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 805000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000ec | INSTR: e9a03397] MATCH OK! -> Reg x7 = 0x69a030ec
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 815000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000f0 | INSTR: 006b0463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 825000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000f4 | INSTR: 001b0093] MATCH OK! -> Reg x1 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 835000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000f8 | INSTR: 340bb8f3] MATCH OK! -> Reg x17 = 0x00000008
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 845000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000fc | INSTR: 3403b3f3] MATCH OK! -> Reg x7 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 855000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000100 | INSTR: 01270b33] MATCH OK! -> Reg x22 = 0x00000010
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 865000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000104 | INSTR: 40295db3] MATCH OK! -> Reg x27 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 875000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000108 | INSTR: 34011b73] MATCH OK! -> Reg x22 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 885000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000010c | INSTR: 001d73b3] MATCH OK! -> Reg x7 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 895000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000110 | INSTR: aa7a4d37] MATCH OK! -> Reg x26 = 0xaa7a4000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 905000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000114 | INSTR: 01f61393] MATCH OK! -> Reg x7 = 0x80000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 915000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000118 | INSTR: 0198c463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 925000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000011c | INSTR: 00188913] MATCH OK! -> Reg x18 = 0x00000009
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 935000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000120 | INSTR: 00865513] MATCH OK! -> Reg x10 = 0x00000002
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 945000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000124 | INSTR: d8bbc993] MATCH OK! -> Reg x19 = 0x00000313
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 955000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000128 | INSTR: 01cf2a23] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 965000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000012c | INSTR: 0080016f] MATCH OK! -> Reg x2 = 0x80000130
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1005000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000134 | INSTR: 3402bbf3] MATCH OK! -> Reg x23 = 0x00000091
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1015000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000138 | INSTR: 00191413] MATCH OK! -> Reg x8 = 0x00000012
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 1025000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000013c | INSTR: 00450463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1035000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000140 | INSTR: 00150b93] MATCH OK! -> Reg x23 = 0x00000003
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 1045000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000144 | INSTR: 009d6463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1055000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000148 | INSTR: 001d0513] MATCH OK! -> Reg x10 = 0xaa7a4001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1065000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000014c | INSTR: 01882333] MATCH OK! -> Reg x6 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1075000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000150 | INSTR: 2fcba813] MATCH OK! -> Reg x16 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 1085000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000154 | INSTR: 01668463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1095000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000158 | INSTR: 00168293] MATCH OK! -> Reg x5 = 0x0000000a
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1105000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000015c | INSTR: 7dcf0437] MATCH OK! -> Reg x8 = 0x7dcf0000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1115000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000160 | INSTR: 5bb5c8b7] MATCH OK! -> Reg x17 = 0x5bb5c000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1125000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000164 | INSTR: 01855293] MATCH OK! -> Reg x5 = 0x000000aa
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1135000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000168 | INSTR: 008006ef] MATCH OK! -> Reg x13 = 0x8000016c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1175000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000170 | INSTR: 01a7d093] MATCH OK! -> Reg x1 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1185000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000174 | INSTR: 4f06bb13] MATCH OK! -> Reg x22 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1195000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000178 | INSTR: c44fb2b7] MATCH OK! -> Reg x5 = 0xc44fb000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1205000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000017c | INSTR: 6eb6c937] MATCH OK! -> Reg x18 = 0x6eb6c000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1215000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000180 | INSTR: 01128697] MATCH OK! -> Reg x13 = 0x81128180
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1225000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000184 | INSTR: 87882637] MATCH OK! -> Reg x12 = 0x87882000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1235000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000188 | INSTR: 3400a3f3] MATCH OK! -> Reg x7 = 0x00000011
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1245000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000018c | INSTR: 002e0233] MATCH OK! -> Reg x4 = 0xd3d23130
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1255000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000190 | INSTR: 340f62f3] MATCH OK! -> Reg x5 = 0x00000011
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1265000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000194 | INSTR: d11a8917] MATCH OK! -> Reg x18 = 0x511a8194
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1295000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000198 | INSTR: 03281333] MATCH OK! -> Reg x6 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1305000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000019c | INSTR: d13c9417] MATCH OK! -> Reg x8 = 0x513c919c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1315000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001a0 | INSTR: 3407a373] MATCH OK! -> Reg x6 = 0x0000001f
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1325000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001a4 | INSTR: 00459e13] MATCH OK! -> Reg x28 = 0xffffeac0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 1335000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001a8 | INSTR: 00860463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1345000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001ac | INSTR: 00160b13] MATCH OK! -> Reg x22 = 0x87882001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1355000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001b0 | INSTR: 340b7bf3] MATCH OK! -> Reg x23 = 0x0000001f
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1365000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001b4 | INSTR: 1f0bfab7] MATCH OK! -> Reg x21 = 0x1f0bf000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1375000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001b8 | INSTR: 687ed337] MATCH OK! -> Reg x6 = 0x687ed000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1385000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001bc | INSTR: d38da717] MATCH OK! -> Reg x14 = 0x538da1bc
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1395000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001c0 | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x800001c0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1405000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001c4 | INSTR: 00ce88e7] MATCH OK! -> Reg x17 = 0x800001c8
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1445000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001cc | INSTR: 41065493] MATCH OK! -> Reg x9 = 0xffff8788
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1455000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001d0 | INSTR: 21aa5397] MATCH OK! -> Reg x7 = 0xa1aa51d0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1465000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001d4 | INSTR: 011e5593] MATCH OK! -> Reg x11 = 0x00007fff
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1475000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001d8 | INSTR: 3401e173] MATCH OK! -> Reg x2 = 0x00000009
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1485000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001dc | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x800001dc
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1495000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001e0 | INSTR: 00ce8ce7] MATCH OK! -> Reg x25 = 0x800001e4
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1535000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001e8 | INSTR: 4867ec37] MATCH OK! -> Reg x24 = 0x4867e000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1565000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001ec | INSTR: 02ca09b3] MATCH OK! -> Reg x19 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1575000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001f0 | INSTR: 257b8417] MATCH OK! -> Reg x8 = 0xa57b81f0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1585000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001f4 | INSTR: 010f1283] MATCH OK! -> Reg x5 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1595000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001f8 | INSTR: 340892f3] MATCH OK! -> Reg x5 = 0x0000000b
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1605000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001fc | INSTR: a93d1617] MATCH OK! -> Reg x12 = 0x293d11fc
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1615000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000200 | INSTR: d86d6393] MATCH OK! -> Reg x7 = 0xfffffd86
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1645000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000204 | INSTR: 03c91933] MATCH OK! -> Reg x18 = 0xfffff944
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1655000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000208 | INSTR: 0064edb3] MATCH OK! -> Reg x27 = 0xffffd788
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1665000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000020c | INSTR: 34055673] MATCH OK! -> Reg x12 = 0x800001c8
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1675000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000210 | INSTR: 38ea4113] MATCH OK! -> Reg x2 = 0x0000038e
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1685000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000214 | INSTR: 34027673] MATCH OK! -> Reg x12 = 0x0000000a
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1715000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000218 | INSTR: 02e591b3] MATCH OK! -> Reg x3 = 0x000029c6
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1725000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000021c | INSTR: 01899533] MATCH OK! -> Reg x10 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1735000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000220 | INSTR: b215a313] MATCH OK! -> Reg x6 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1745000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000224 | INSTR: 340d1273] MATCH OK! -> Reg x4 = 0x0000000a
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1755000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000228 | INSTR: 4085d333] MATCH OK! -> Reg x6 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1765000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000022c | INSTR: 016e1933] MATCH OK! -> Reg x18 = 0xffffd580
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1775000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000230 | INSTR: 5e166593] MATCH OK! -> Reg x11 = 0x000005eb
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1785000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000234 | INSTR: 0080086f] MATCH OK! -> Reg x16 = 0x80000238
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1825000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000023c | INSTR: ca7cc713] MATCH OK! -> Reg x14 = 0x7ffffd43
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1855000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000240 | INSTR: 024902b3] MATCH OK! -> Reg x5 = 0xfffe5700
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1865000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000244 | INSTR: 340b17f3] MATCH OK! -> Reg x15 = 0xaa7a4000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1875000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000248 | INSTR: 3401dd73] MATCH OK! -> Reg x26 = 0x87882001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 1885000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000024c | INSTR: 003a8463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1895000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000250 | INSTR: 001a8d93] MATCH OK! -> Reg x27 = 0x1f0bf001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1905000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000254 | INSTR: 340d3273] MATCH OK! -> Reg x4 = 0x00000003
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1915000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000258 | INSTR: 3402f473] MATCH OK! -> Reg x8 = 0x00000002
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1925000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000025c | INSTR: 018f0e03] MATCH OK! -> Reg x28 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1935000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000260 | INSTR: 00cd1433] MATCH OK! -> Reg x8 = 0x20800400
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1945000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000264 | INSTR: 340fe573] MATCH OK! -> Reg x10 = 0x00000002
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1955000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000268 | INSTR: 85ab7713] MATCH OK! -> Reg x14 = 0x87882000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1985000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000026c | INSTR: 030a82b3] MATCH OK! -> Reg x5 = 0xe27c8000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 1995000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000270 | INSTR: 3404bdf3] MATCH OK! -> Reg x27 = 0x0000001f
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2005000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000274 | INSTR: 40c65293] MATCH OK! -> Reg x5 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2015000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000278 | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x80000278
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2025000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000027c | INSTR: 00ce86e7] MATCH OK! -> Reg x13 = 0x80000280
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2065000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000284 | INSTR: 008004ef] MATCH OK! -> Reg x9 = 0x80000288
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2105000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000028c | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x8000028c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2115000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000290 | INSTR: 00ce8567] MATCH OK! -> Reg x10 = 0x80000294
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2155000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000298 | INSTR: 340918f3] MATCH OK! -> Reg x17 = 0x00000017
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2165000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000029c | INSTR: 340f60f3] MATCH OK! -> Reg x1 = 0xffffd580
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2175000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002a0 | INSTR: 00831993] MATCH OK! -> Reg x19 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 2185000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002a4 | INSTR: 032f1023] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 2195000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002a8 | INSTR: 015f0e23] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2205000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002ac | INSTR: b3792393] MATCH OK! -> Reg x7 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 2215000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002b0 | INSTR: 00251463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2255000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002b8 | INSTR: a0a82197] MATCH OK! -> Reg x3 = 0x20a822b8
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2265000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002bc | INSTR: 01a19d13] MATCH OK! -> Reg x26 = 0xe0000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2275000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002c0 | INSTR: 00d45513] MATCH OK! -> Reg x10 = 0x00010400
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2285000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002c4 | INSTR: 41fa5113] MATCH OK! -> Reg x2 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2295000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002c8 | INSTR: 3046f913] MATCH OK! -> Reg x18 = 0x00000200
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 2305000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002cc | INSTR: 01324463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2315000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002d0 | INSTR: 00120093] MATCH OK! -> Reg x1 = 0x00000004
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2325000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002d4 | INSTR: 01b549b3] MATCH OK! -> Reg x19 = 0x0001041f
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2335000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002d8 | INSTR: 00800b6f] MATCH OK! -> Reg x22 = 0x800002dc
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 2375000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002e0 | INSTR: 015f2823] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2385000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002e4 | INSTR: aca65e17] MATCH OK! -> Reg x28 = 0x2ca652e4
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2395000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002e8 | INSTR: 40175113] MATCH OK! -> Reg x2 = 0xc3c41000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 2405000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002ec | INSTR: 00f16463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2415000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002f0 | INSTR: 00110913] MATCH OK! -> Reg x18 = 0xc3c41001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2425000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002f4 | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x800002f4
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2435000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002f8 | INSTR: 00ce8d67] MATCH OK! -> Reg x26 = 0x800002fc
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2475000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000300 | INSTR: 5cb26b93] MATCH OK! -> Reg x23 = 0x000005cb
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2485000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000304 | INSTR: 0082b6b3] MATCH OK! -> Reg x13 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2495000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000308 | INSTR: 020f1083] MATCH OK! -> Reg x1 = 0xffffd580
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2525000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000030c | INSTR: 037786b3] MATCH OK! -> Reg x13 = 0x9230c000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2535000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000310 | INSTR: 00c82133] MATCH OK! -> Reg x2 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2545000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000314 | INSTR: 995dfa13] MATCH OK! -> Reg x20 = 0x00000015
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2555000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000318 | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x80000318
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2565000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000031c | INSTR: 00ce84e7] MATCH OK! -> Reg x9 = 0x80000320
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 2605000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000324 | INSTR: 0012f463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2615000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000328 | INSTR: 00128d93] MATCH OK! -> Reg x27 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2625000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000032c | INSTR: 01b89913] MATCH OK! -> Reg x18 = 0xb8000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 2635000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000330 | INSTR: 00bf2423] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2645000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000334 | INSTR: a9bb3993] MATCH OK! -> Reg x19 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2655000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000338 | INSTR: 273edab7] MATCH OK! -> Reg x21 = 0x273ed000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2665000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000033c | INSTR: ca94b317] MATCH OK! -> Reg x6 = 0x4a94b33c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2675000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000340 | INSTR: 96b71ab7] MATCH OK! -> Reg x21 = 0x96b71000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2685000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000344 | INSTR: 6da7fab7] MATCH OK! -> Reg x21 = 0x6da7f000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2695000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000348 | INSTR: 400c5213] MATCH OK! -> Reg x4 = 0x4867e000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2705000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000034c | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x8000034c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2715000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000350 | INSTR: 00ce87e7] MATCH OK! -> Reg x15 = 0x80000354
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2755000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000358 | INSTR: 0177fcb3] MATCH OK! -> Reg x25 = 0x00000140
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2765000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000035c | INSTR: 00661533] MATCH OK! -> Reg x10 = 0xa0000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2775000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000360 | INSTR: 0142d793] MATCH OK! -> Reg x15 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2785000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000364 | INSTR: 31be72b7] MATCH OK! -> Reg x5 = 0x31be7000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2795000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000368 | INSTR: d2c4be13] MATCH OK! -> Reg x28 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 2805000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000036c | INSTR: 01a5f463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2815000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000370 | INSTR: 00158693] MATCH OK! -> Reg x13 = 0x000005ec
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2825000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000374 | INSTR: 00a2d593] MATCH OK! -> Reg x11 = 0x000c6f9c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2855000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000378 | INSTR: 02dc82b3] MATCH OK! -> Reg x5 = 0x00076700
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(52) @ 2865000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000037c | INSTR: 340f6973] MATCH OK! -> Reg x18 = 0xffffd59e
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 2875000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000380 | INSTR: 00c3e463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(56) @ 2915000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000388 | INSTR: 00165463] MATCH OK! -> Executed safely
+[SCB DEBUG] PC Mismatch! RTL: 0x8000038c | Spike PC: 0x80000390
+UVM_FATAL /home/user1/Darshan_Verification/Tanuja/core_uvm/tb/sv/corerv_scoreboard.sv(47) @ 2925000: uvm_test_top.env.scb [SCB_MISMATCH] Mismatch at PC: 8000038c | INSTR: 00160c13 | Reg: x24 | RTL Val: 0000000b
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  213
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    1
+** Report counts by id
+[MON_MEM]     1
+[RNTST]     1
+[SCB_MATCH]   210
+[SCB_MISMATCH]     1
+[TEST]     1
+$finish called from file "/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_report_object.svh", line 292.
+$finish at simulation time              2925000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+
+ Coverage status: End of All Coverages ...
+
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 2925000 ps
+CPU Time:      0.330 seconds;       Data structure size:   3.0Mb
+Wed Sep 30 14:34:41 2026
