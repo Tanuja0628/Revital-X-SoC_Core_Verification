@@ -1,42 +1,20 @@
-# ========================================
-# Simulation-generated files
-# ========================================
-
-# Coverage database
-infra/coverage.vdb/
-
-# Compiled simulation files
+# Ignore generated regression and simulation outputs inside infra/
+infra/cm.log
 infra/csrc/
-infra/simv.daidir/
+infra/coverage.vdb/
+infra/disassembly.txt
+infra/firmware.hex
+infra/inter.fsdb
+infra/novas_dump.log
+infra/rtl_trace.log
+infra/sim_corerv_test.log
 infra/simv
-
-# Simulation logs
-infra/*.log
-infra/*.fsdb
-
-# Generated binaries
+infra/simv.daidir/
+infra/spike_trace.log
+infra/spike_wrapper.so
 infra/test.bin
 infra/test.elf
-
-# Generated assembly and disassembly
 infra/test.S
-infra/disassembly.txt
-
-# Generated simulator files
-infra/vc_hdrs.h
 infra/ucli.key
-infra/spike_wrapper.so# Ignore temporary, compiled object, and swap files
-*.o
-*.elf
-*.bin
-*.tmp
-*.swp
-*~
-.DS_Store
-
-# Explicitly ensure failure tracking artifacts are committed
-!*.log
-!*.S
-!*.txt
-!*.hex
-!*.md
+infra/vc_hdrs.h
+infra/verdi_config_file
