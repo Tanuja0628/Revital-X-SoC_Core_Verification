@@ -45,7 +45,10 @@ class corerv_coverage extends uvm_subscriber #(corerv_seq_item);
         }
 
         // 4. Cross Coverage: Did we do every ALU op to every destination register?
-        cross_op_rd: cross cp_opcode, cp_rd;
+        cross_op_rd: cross cp_opcode, cp_rd{
+        // Exclude store and branch instructions from destination register cross-coverage
+        ignore_bins no_rd = binsof(cp_opcode.store) || binsof(cp_opcode.branch);
+    }
     endgroup
 
     function new(string name, uvm_component parent);
