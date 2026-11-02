@@ -48,7 +48,8 @@ for i in $(seq 1 $ITERATIONS); do
     TEST_NAME="corerv_test"
     
     SIM_LOG="$REPORT_DIR/sim_$i.log"
-    make run SEED=$TEST_SEED TESTNAME=$TEST_NAME > "$SIM_LOG" 2>&1
+    # Pass COV_NAME=iter_$i so VCS generates unique sub-databases instead of overwriting
+    make run SEED=$TEST_SEED TESTNAME=$TEST_NAME COV_NAME=iter_$i> "$SIM_LOG" 2>&1
 
     # Check for missing log, Scoreboard Mismatch, or Synopsys VCS Errors ("Error-[" or "Fatal:")
     if [ ! -f "$SIM_LOG" ] || grep -q "SCB_MISMATCH" "$SIM_LOG" || grep -q "Error-\|Fatal:" "$SIM_LOG"; then
