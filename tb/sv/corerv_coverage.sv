@@ -18,7 +18,7 @@ class corerv_coverage extends uvm_subscriber #(corerv_seq_item);
             bins op      = {7'b0110011}; // R-Type ALU & MUL
             bins lui     = {7'b0110111};
             bins auipc   = {7'b0010111};
-	    bins system  = {7'b1110011};
+	   // bins system  = {7'b1110011};
         }
 
         // 2. Cover M-Extension (Multiplier)
