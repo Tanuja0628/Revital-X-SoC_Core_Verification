@@ -25,7 +25,7 @@ RV_OBJDUMP="/home/user1/tools/riscv64-unknown-elf-gcc-8.3.0-2020.04.1-x86_64-lin
 echo "=================================================="
 echo " Starting Nightly Regression: $ITERATIONS Iterations"
 echo "=================================================="
-
+make compile > "$REPORT_DIR/compile.log" 2>&1
 for i in $(seq 1 $ITERATIONS); do
     cd "$WORK_DIR" || exit 1
     echo "-> Running Test $i / $ITERATIONS"
@@ -49,7 +49,7 @@ for i in $(seq 1 $ITERATIONS); do
     
     SIM_LOG="$REPORT_DIR/sim_$i.log"
     # Pass COV_NAME=iter_$i so VCS generates unique sub-databases instead of overwriting
-    make run SEED=$TEST_SEED TESTNAME=$TEST_NAME COV_NAME=iter_$i> "$SIM_LOG" 2>&1
+    make sim SEED=$SEED COV_NAME="iter_${i}_seed_${SEED}" > "$REPORT_DIR/iter_${i}_seed_${SEED}.log" 2>&1
 
     # Check for missing log, Scoreboard Mismatch, or Synopsys VCS Errors ("Error-[" or "Fatal:")
     if [ ! -f "$SIM_LOG" ] || grep -q "SCB_MISMATCH" "$SIM_LOG" || grep -q "Error-\|Fatal:" "$SIM_LOG"; then
@@ -89,7 +89,7 @@ for i in $(seq 1 $ITERATIONS); do
         echo "   [PASS] Seed: $TEST_SEED"
     fi
 done
-
+make urg
 cd "$WORK_DIR" || exit 1
 
 # Automatically cluster and summarize failures across all iterations
