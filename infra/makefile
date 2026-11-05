@@ -88,3 +88,6 @@ clean:
 	rm -rf ucli.key vc_hdrs.h verdiLog novas.*
 
 .PHONY: all build run cov waves_verdi waves_dve cov_gui clean
+
+urg:
+	urg -dir coverage.vdb -dbname merged_coverage.vdb -format both -metric line+cond+fsm+tgl+branch+group -report urgReport
