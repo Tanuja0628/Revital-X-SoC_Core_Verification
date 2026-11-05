@@ -26,14 +26,14 @@ def generate_assembly(num_instructions, filename="test.S"):
         f.write(".globl _start\n")
         f.write("_start:\n")
         
-        f.write("    lui x30, 0x80010\n") 
+#        f.write("    lui x30, 0x80010\n") 
         
-        for r in range(1, 32):
-  			  f.write(f"    li x{r}, {random.randint(-1000, 1000)}\n")
-		for csr in ["0x300", "0x304", "0x305", "0x340", "0x341", "0x342"]:
-  			  f.write(f"    csrrw x0, {csr}, x0\n")
-   			  f.write(f"    csrrs x1, {csr}, x0\n")
-		f.write("    lui x30, 0x80010\n")
+		for r in range(1, 32):
+            f.write("    li x%d, %d\n" % (r, random.randint(-1000, 1000)))
+        for csr in ["0x300", "0x304", "0x305", "0x340", "0x341", "0x342"]:
+            f.write("    csrrw x0, %s, x0\n" % csr)
+            f.write("    csrrs x1, %s, x0\n" % csr)
+        f.write("    lui x30, 0x80010\n")
         for _ in range(num_instructions):
             category = random.choice(["ALU_R", "ALU_I", "SHIFT_I", "LUI", "AUIPC", "LSU", "BRANCH", "JUMP", "MUL", "CSR_R", "CSR_I"])
             
