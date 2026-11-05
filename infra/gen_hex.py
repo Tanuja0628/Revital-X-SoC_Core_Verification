@@ -12,7 +12,7 @@ MUL = ["mul", "mulh", "mulhsu", "mulhu"]
 
 CSR_R = ["csrrw", "csrrs", "csrrc"]
 CSR_I = ["csrrwi", "csrrsi", "csrrci"]
-CSR_ADDRS = ["0x340", "0x342"] # mscratch and mcause for random read/write
+CSR_ADDRS = ["0x340", "0x342"]
 
 def get_reg(exclude=[]):
     while True:
@@ -29,11 +29,12 @@ def generate_assembly(num_instructions, filename="test.S"):
         f.write("    lui x30, 0x80010\n") 
         
         for r in range(1, 32):
-  			  f.write(f"    li x{r}, {random.randint(-1000, 1000)}\n")
-		for csr in ["0x300", "0x304", "0x305", "0x340", "0x341", "0x342"]:
-  			  f.write(f"    csrrw x0, {csr}, x0\n")
-   			  f.write(f"    csrrs x1, {csr}, x0\n")
-		f.write("    lui x30, 0x80010\n")
+            f.write(f"    li x{r}, {random.randint(-1000, 1000)}\n")
+        for csr in ["0x300", "0x304", "0x305", "0x340", "0x341", "0x342"]:
+            f.write(f"    csrrw x0, {csr}, x0\n")
+            f.write(f"    csrrs x1, {csr}, x0\n")
+        f.write("    lui x30, 0x80010\n")
+        
         for _ in range(num_instructions):
             category = random.choice(["ALU_R", "ALU_I", "SHIFT_I", "LUI", "AUIPC", "LSU", "BRANCH", "JUMP", "MUL", "CSR_R", "CSR_I"])
             
@@ -44,38 +45,31 @@ def generate_assembly(num_instructions, filename="test.S"):
             if category == "ALU_R":
                 instr = random.choice(ALU_R)
                 f.write("    %s %s, %s, %s\n" % (instr, rd, rs1, rs2))
-                
             elif category == "ALU_I":
                 instr = random.choice(ALU_I)
                 imm = random.randint(-2048, 2047)
                 f.write("    %s %s, %s, %d\n" % (instr, rd, rs1, imm))
-                
             elif category == "SHIFT_I":
                 instr = random.choice(SHIFT_I)
                 shamt = random.randint(0, 31)
                 f.write("    %s %s, %s, %d\n" % (instr, rd, rs1, shamt))
-                
             elif category == "LUI":
                 imm = random.randint(0, 0xFFFFF)
                 f.write("    lui %s, 0x%x\n" % (rd, imm))
-                
             elif category == "AUIPC":
                 imm = random.randint(0, 0xFFFFF)
                 f.write("    auipc %s, 0x%x\n" % (rd, imm))
-                
             elif category == "LSU":
                 offset = random.choice([0, 4, 8, 12, 16, 20, 24, 28, 32]) 
                 if random.choice([True, False]):
                     f.write("    %s %s, %d(x30)\n" % (random.choice(LSU_L), rd, offset))
                 else:
                     f.write("    %s %s, %d(x30)\n" % (random.choice(LSU_S), rs2, offset))
-                    
             elif category == "BRANCH":
                 instr = random.choice(BRANCH)
                 f.write("    %s %s, %s, 1f\n" % (instr, rs1, rs2))
                 f.write("    addi %s, %s, 1\n" % (rd, rs1))
                 f.write("1:\n")
-                
             elif category == "JUMP":
                 if random.choice([True, False]):
                     f.write("    jal %s, 1f\n" % rd)
@@ -85,12 +79,10 @@ def generate_assembly(num_instructions, filename="test.S"):
                     f.write("    auipc x29, 0\n")
                     f.write("    jalr %s, x29, 12\n" % rd)
                     f.write("    nop\n")
-                    
             elif category == "MUL":
                 instr = random.choice(MUL)
                 f.write("    %s %s, %s, %s\n" % (instr, rd, rs1, rs2))
-
-	    elif category == "CSR_R":
+            elif category == "CSR_R":
                 instr = random.choice(CSR_R)
                 csr = random.choice(CSR_ADDRS)
                 f.write("    %s %s, %s, %s\n" % (instr, rd, csr, rs1))
@@ -100,10 +92,10 @@ def generate_assembly(num_instructions, filename="test.S"):
                 uimm = random.randint(0, 31)
                 f.write("    %s %s, %s, %d\n" % (instr, rd, csr, uimm))
 
-
         f.write("\n_finish:\n")
         f.write("    j _finish\n")
 
 if __name__ == "__main__":
     generate_assembly(200)
     print("Generated random assembly in test.S")
+
