@@ -25,15 +25,15 @@ TB_FILES  = $(TB_SV_DIR)/corerv_if.sv \
 TESTNAME = corerv_test
 SEED     = random
 #coverage 
-COV_NAME ?= $(TESTNAME)
+COV_NAME ?= $(TESTNAME)_$(SEED)
 # Synopsys Compile Flags (-kdb enables Verdi/FSDB dumping, -cm enables coverage)
 VCS_FLAGS = -full64 -sverilog -ntb_opts uvm -debug_access+all -kdb -timescale=1ns/1ps +lint=TFIPC-L
 VCS_COV_FLAGS = -cm line+cond+fsm+tgl+branch -cm_dir ./coverage.vdb
 
 # Synopsys Runtime Flags
-SIM_FLAGS = +UVM_TESTNAME=$(TESTNAME) +ntb_random_seed=$(SEED) -cm_name $(COV_NAME)\
-            -cm line+cond+fsm+tgl+branch -cm_name $(TESTNAME) -cm_dir ./coverage.vdb \
-            -l sim_$(TESTNAME).log
+SIM_FLAGS = +UVM_TESTNAME=$(TESTNAME) +ntb_random_seed=$(SEED) \
+           -cm line+cond+fsm+tgl+branch -cm_name $(COV_NAME) -cm_dir ./coverage.vdb \
+           -l sim_$(COV_NAME).log
 
 # ==============================================================================
 # Targets
