@@ -1,0 +1,37 @@
+<session version="1.1" release="U-2023.03" timestp="2026-11-01 22:38:11 GMT">
+  <info>
+    <attr name="datetime" value="Mon Nov  2 04:08:14 2026
+"/>
+    <attr name="command" value="urg -dir coverage.vdb -dbname cov_work/merged.vdb -report cov_work/html_report"/>
+    <attr name="top_instance" value="dp_ram,tb_top,uvm_custom_install_recording,half_adder,uvm_custom_install_verdi_recording"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Cond" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Toggle" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="FSM" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Branch" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="835/1495" />
+    <metric name="Cond" value="10871/22946" />
+    <metric name="Toggle" value="19597/30050" />
+    <metric name="FSM" value="0/8" />
+    <metric name="Branch" value="408/825" />
+    <metric name="Group" value="77.1613%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="corerv_pkg::corerv_coverage::cg_rv32im">
+      <metric name="Group" value="77.1613%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+  </scope>
+  </old_coverage>
+</session>

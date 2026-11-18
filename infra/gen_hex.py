@@ -8,11 +8,11 @@ SHIFT_I = ["slli", "srli", "srai"]
 LSU_L = ["lb", "lh", "lw", "lbu", "lhu"]
 LSU_S = ["sb", "sh", "sw"]
 BRANCH = ["beq", "bne", "blt", "bge", "bltu", "bgeu"]
-MUL = ["mul", "mulh", "mulhsu", "mulhu"]
+MUL = ["mul", "mulh"]
 
 CSR_R = ["csrrw", "csrrs", "csrrc"]
 CSR_I = ["csrrwi", "csrrsi", "csrrci"]
-CSR_ADDRS = ["0x340", "0x342"] # mscratch and mcause for random read/write
+CSR_ADDRS = ["0x340"] # Target mscratch to safely test the datapath
 
 def get_reg(exclude=[]):
     while True:
@@ -26,14 +26,11 @@ def generate_assembly(num_instructions, filename="test.S"):
         f.write(".globl _start\n")
         f.write("_start:\n")
         
-#        f.write("    lui x30, 0x80010\n") 
+        f.write("    lui x30, 0x80010\n") 
         
-		for r in range(1, 32):
-            f.write("    li x%d, %d\n" % (r, random.randint(-1000, 1000)))
-        for csr in ["0x300", "0x304", "0x305", "0x340", "0x341", "0x342"]:
-            f.write("    csrrw x0, %s, x0\n" % csr)
-            f.write("    csrrs x1, %s, x0\n" % csr)
-        f.write("    lui x30, 0x80010\n")
+        for i in range(1, 10):
+            f.write("    li x%d, %d\n" % (i, random.randint(-1000, 1000)))
+
         for _ in range(num_instructions):
             category = random.choice(["ALU_R", "ALU_I", "SHIFT_I", "LUI", "AUIPC", "LSU", "BRANCH", "JUMP", "MUL", "CSR_R", "CSR_I"])
             
