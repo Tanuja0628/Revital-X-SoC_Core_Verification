@@ -12,7 +12,7 @@ MUL = ["mul", "mulh"]
 
 CSR_R = ["csrrw", "csrrs", "csrrc"]
 CSR_I = ["csrrwi", "csrrsi", "csrrci"]
-CSR_ADDRS = ["0x340"] # Target mscratch to safely test the datapath
+CSR_ADDRS = ["0x340", "0x300", "0x304", "0x305", "0x341", "0x342", "0x344"] # Target mscratch to safely test the datapath
 
 def get_reg(exclude=[]):
     while True:
@@ -26,6 +26,20 @@ def generate_assembly(num_instructions, filename="test.S"):
         f.write(".globl _start\n")
         f.write("_start:\n")
         
+	# ALU & Shift Corner Cases (0x80000000, 0x7FFFFFFF, -1, 0, shamt 0/1/31)
+        f.write("    lui x5, 0x80000\n")          # 0x8000_0000 (Min Signed Int)
+        f.write("    addi x6, x5, -1\n")          # 0x7FFF_FFFF (Max Signed Int)
+        f.write("    addi x7, x0, -1\n")          # 0xFFFF_FFFF (-1)
+        f.write("    slli x8, x5, 0\n")           # shamt = 0
+        f.write("    srli x9, x6, 1\n")           # shamt = 1
+        f.write("    srai x10, x5, 31\n")         # shamt = 31
+        f.write("    slt x11, x5, x6\n")          # Signed compare across sign boundary
+        f.write("    sltu x12, x5, x6\n")         # Unsigned compare across sign boundary
+        # External Memory Bus (MIU / LSU_RVX) Transaction at 0x8002_0000
+        f.write("    lui x28, 0x80020\n")
+        f.write("    sw x0, 0(x28)\n")
+        f.write("    lw x13, 0(x28)\n")
+
         f.write("    lui x30, 0x80010\n") 
         
         for i in range(1, 10):
@@ -102,5 +116,5 @@ def generate_assembly(num_instructions, filename="test.S"):
         f.write("    j _finish\n")
 
 if __name__ == "__main__":
-    generate_assembly(200)
+    generate_assembly(150)
     print("Generated random assembly in test.S")

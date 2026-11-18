@@ -1,288 +1,229 @@
 .text
 .globl _start
 _start:
+    lui x5, 0x80000
+    addi x6, x5, -1
+    addi x7, x0, -1
+    slli x8, x5, 0
+    srli x9, x6, 1
+    srai x10, x5, 31
+    slt x11, x5, x6
+    sltu x12, x5, x6
+    lui x28, 0x80020
+    sw x0, 0(x28)
+    lw x13, 0(x28)
     lui x30, 0x80010
-    li x1, 274
-    li x2, -83
-    li x3, 7
-    li x4, 430
-    li x5, 352
-    li x6, -377
-    li x7, 969
-    li x8, -363
-    li x9, -891
-    auipc x12, 0x772bd
-    csrrsi x6, 0x340, 22
-    sra x14, x23, x12
-    addi x17, x11, 39
-    beq x22, x23, 1f
-    addi x25, x22, 1
-1:
-    srai x18, x24, 1
-    sub x25, x12, x5
-    csrrwi x3, 0x340, 16
-    sltiu x3, x22, 1848
-    xori x2, x24, 1232
-    slli x26, x28, 17
-    sw x28, 8(x30)
-    csrrw x1, 0x340, x24
-    slt x9, x23, x8
-    lui x4, 0x6c757
-    blt x25, x1, 1f
-    addi x13, x25, 1
-1:
-    lui x19, 0x7455c
-    sltiu x27, x13, -872
-    sltiu x24, x18, -1627
-    lui x2, 0xbc9be
-    bgeu x8, x28, 1f
-    addi x14, x8, 1
-1:
-    bne x19, x28, 1f
-    addi x15, x19, 1
-1:
-    csrrs x2, 0x340, x16
+    li x1, 774
+    li x2, -714
+    li x3, -572
+    li x4, 556
+    li x5, 525
+    li x6, -362
+    li x7, 928
+    li x8, -688
+    li x9, 684
+    mul x26, x22, x12
+    sltu x5, x7, x22
+    sb x22, 24(x30)
+    csrrwi x7, 0x340, 1
+    srai x27, x22, 8
+    srli x23, x27, 19
+    xori x14, x2, 1945
+    add x26, x20, x28
+    mulh x3, x27, x8
+    lui x2, 0x779cc
+    auipc x22, 0xafe5a
+    mul x25, x10, x22
+    mul x7, x12, x4
+    ori x21, x24, -920
+    csrrc x17, 0x340, x23
+    srli x7, x7, 1
     auipc x29, 0
-    jalr x11, x29, 12
+    jalr x1, x29, 12
     nop
-    srai x13, x26, 16
-    srai x1, x13, 25
-    csrrci x27, 0x340, 14
-    csrrwi x26, 0x340, 20
-    jal x23, 1f
-    nop
-1:
-    srl x13, x3, x25
-    slli x24, x24, 15
-    lui x23, 0xa1265
-    srai x11, x26, 11
-    csrrsi x3, 0x340, 9
-    csrrci x9, 0x340, 0
-    auipc x29, 0
-    jalr x15, x29, 12
-    nop
-    bne x6, x16, 1f
-    addi x19, x6, 1
-1:
-    lui x4, 0x3cc84
-    csrrwi x5, 0x340, 8
-    csrrw x16, 0x340, x4
-    lui x19, 0x7408b
-    jal x6, 1f
-    nop
-1:
-    beq x17, x19, 1f
-    addi x7, x17, 1
-1:
-    csrrs x28, 0x340, x26
-    auipc x29, 0
-    jalr x22, x29, 12
-    nop
-    slli x25, x21, 23
-    slli x8, x14, 19
-    lui x25, 0xd18ce
+    auipc x26, 0xab693
+    csrrc x25, 0x340, x18
+    auipc x25, 0x3715a
+    and x18, x21, x3
+    srli x21, x7, 20
+    csrrsi x28, 0x340, 5
+    sb x5, 32(x30)
+    slt x24, x28, x21
+    lui x23, 0xe9efc
+    srai x1, x1, 27
+    mulh x18, x25, x19
+    lui x19, 0xdcc6f
+    srli x21, x25, 27
+    auipc x14, 0x6c594
+    add x24, x7, x21
+    sub x24, x8, x9
+    auipc x9, 0x3c98
+    lui x19, 0xc0085
     jal x8, 1f
     nop
 1:
-    sra x7, x19, x25
-    blt x9, x5, 1f
-    addi x22, x9, 1
+    sh x25, 24(x30)
+    mul x1, x15, x2
+    lui x24, 0xa3d0c
+    csrrc x7, 0x340, x14
+    srai x13, x10, 31
+    bltu x28, x21, 1f
+    addi x3, x28, 1
 1:
-    lhu x13, 16(x30)
-    auipc x10, 0x27eb6
-    csrrci x13, 0x340, 30
-    csrrc x28, 0x340, x21
+    slli x11, x12, 21
+    csrrw x27, 0x340, x1
+    jal x11, 1f
+    nop
+1:
+    lui x5, 0xda765
+    bne x10, x25, 1f
+    addi x26, x10, 1
+1:
+    auipc x14, 0x84b90
+    bne x2, x12, 1f
+    addi x1, x2, 1
+1:
+    csrrw x5, 0x340, x28
+    slli x19, x19, 3
+    srli x24, x10, 30
     auipc x29, 0
-    jalr x23, x29, 12
+    jalr x4, x29, 12
     nop
-    bltu x23, x18, 1f
-    addi x7, x23, 1
+    auipc x19, 0x24c1f
+    bge x28, x25, 1f
+    addi x20, x28, 1
 1:
-    jal x9, 1f
-    nop
-1:
-    slti x22, x19, 608
-    jal x7, 1f
-    nop
-1:
-    and x20, x25, x3
-    csrrc x2, 0x340, x23
-    lb x10, 28(x30)
-    csrrw x13, 0x340, x14
-    sb x12, 16(x30)
-    csrrsi x5, 0x340, 29
-    jal x14, 1f
-    nop
-1:
-    auipc x8, 0x544b6
-    auipc x25, 0xba614
-    jal x10, 1f
-    nop
-1:
-    lhu x25, 20(x30)
-    slti x4, x18, -970
-    lui x8, 0xeead8
-    jal x4, 1f
-    nop
-1:
-    csrrw x7, 0x340, x5
-    auipc x22, 0xe399e
-    lw x23, 0(x30)
-    lb x19, 20(x30)
-    lbu x17, 16(x30)
-    ori x4, x24, 1933
-    mul x7, x12, x24
-    jal x24, 1f
-    nop
-1:
-    csrrw x22, 0x340, x19
-    lui x3, 0x64e89
-    sltu x8, x23, x20
-    auipc x25, 0xf6539
-    mul x14, x27, x5
-    srai x2, x10, 17
-    srai x8, x23, 11
-    sb x28, 8(x30)
-    lui x2, 0x3c6fc
-    sb x23, 16(x30)
-    xori x6, x19, 250
-    slli x19, x13, 11
-    lui x11, 0xd7537
-    csrrsi x15, 0x340, 18
-    sw x8, 0(x30)
-    csrrwi x18, 0x340, 27
-    sb x21, 24(x30)
-    csrrc x14, 0x340, x25
-    lui x14, 0xed089
-    lui x22, 0x2826d
-    lui x6, 0xff47
-    lw x5, 12(x30)
-    csrrsi x7, 0x340, 19
-    srai x2, x5, 6
-    xori x18, x25, 1812
-    srli x2, x23, 19
-    bne x25, x11, 1f
-    addi x19, x25, 1
-1:
-    csrrw x21, 0x340, x17
-    lui x15, 0xa140a
-    csrrsi x26, 0x340, 23
-    auipc x12, 0xcb724
-    sltu x25, x26, x18
-    xori x27, x4, 866
-    csrrs x28, 0x340, x1
-    jal x21, 1f
-    nop
-1:
-    lui x2, 0xae251
-    lhu x25, 8(x30)
-    sw x7, 8(x30)
-    srli x12, x28, 29
-    beq x16, x1, 1f
-    addi x10, x16, 1
-1:
-    csrrci x27, 0x340, 11
-    bgeu x18, x4, 1f
-    addi x18, x18, 1
-1:
-    slt x27, x5, x3
-    bne x8, x20, 1f
-    addi x26, x8, 1
-1:
-    auipc x29, 0
-    jalr x5, x29, 12
-    nop
-    lhu x20, 20(x30)
-    and x10, x13, x4
-    lui x3, 0x847ac
-    lui x6, 0xf5913
-    csrrc x11, 0x340, x2
-    mul x10, x27, x20
-    csrrsi x26, 0x340, 1
-    slli x7, x11, 24
-    ori x15, x2, 1904
-    sltiu x8, x28, -1042
-    andi x26, x9, -1848
-    auipc x20, 0x24b95
-    srl x20, x6, x14
-    lh x20, 24(x30)
-    mulh x2, x11, x3
-    slli x10, x9, 6
-    auipc x28, 0x21eda
-    lui x9, 0xbd1a1
-    sb x11, 0(x30)
-    csrrci x27, 0x340, 8
-    csrrw x9, 0x340, x1
-    csrrs x5, 0x340, x19
-    csrrw x4, 0x340, x22
-    auipc x12, 0xc7118
-    ori x9, x5, 1189
-    beq x25, x21, 1f
-    addi x8, x25, 1
-1:
-    or x21, x20, x9
-    mul x10, x21, x15
-    sltiu x3, x2, -579
-    ori x5, x27, -1455
-    srli x13, x26, 4
-    lui x8, 0x50113
+    csrrwi x24, 0x340, 19
+    sh x3, 28(x30)
     jal x6, 1f
     nop
 1:
-    mulh x24, x13, x13
-    auipc x26, 0x47e9f
-    sh x25, 24(x30)
-    bltu x16, x7, 1f
-    addi x10, x16, 1
+    csrrsi x9, 0x340, 13
+    auipc x15, 0xbbcb7
+    lui x6, 0x341e9
+    bge x11, x25, 1f
+    addi x1, x11, 1
 1:
-    mul x18, x12, x11
-    csrrw x14, 0x340, x22
-    lui x27, 0x3c30c
-    lui x12, 0xa22cb
-    csrrs x22, 0x340, x14
-    mulh x14, x21, x4
-    auipc x29, 0
-    jalr x14, x29, 12
-    nop
-    sub x1, x22, x4
-    csrrw x26, 0x340, x23
-    andi x5, x22, 1802
-    srli x2, x11, 18
-    addi x12, x15, 565
-    slti x20, x17, 1402
-    csrrwi x6, 0x340, 18
-    csrrsi x1, 0x340, 2
-    mul x1, x20, x15
-    srli x13, x24, 22
-    bgeu x17, x4, 1f
-    addi x22, x17, 1
+    auipc x2, 0x823a2
+    mul x5, x18, x4
+    mul x26, x24, x20
+    or x13, x1, x12
+    auipc x11, 0x3d250
+    add x19, x6, x22
+    slt x18, x10, x10
+    lh x28, 28(x30)
+    csrrc x4, 0x340, x6
+    lui x21, 0x5f7a7
+    auipc x27, 0x554c4
+    bne x6, x15, 1f
+    addi x8, x6, 1
 1:
-    slli x28, x8, 8
-    addi x10, x20, 1180
-    csrrci x19, 0x340, 10
-    bgeu x26, x26, 1f
-    addi x3, x26, 1
-1:
-    srli x25, x26, 27
-    bge x17, x15, 1f
-    addi x5, x17, 1
-1:
-    csrrsi x25, 0x340, 22
-    auipc x23, 0xf7791
-    lui x2, 0x2f864
-    jal x5, 1f
-    nop
-1:
-    auipc x9, 0xc507e
-    sw x4, 28(x30)
-    add x19, x6, x11
-    mulh x11, x12, x23
+    sra x26, x7, x17
+    csrrci x21, 0x340, 20
+    or x2, x28, x20
+    csrrs x18, 0x340, x26
+    mulh x2, x26, x22
+    lui x8, 0x1ba25
     jal x23, 1f
     nop
 1:
-    lui x14, 0x89ad3
-    andi x24, x3, 739
-    lui x5, 0x1de37
+    auipc x21, 0x730e1
+    csrrc x5, 0x340, x28
+    ori x9, x22, 1676
+    slli x28, x9, 28
+    bltu x10, x9, 1f
+    addi x12, x10, 1
+1:
+    mulh x7, x8, x5
+    sltu x22, x11, x1
+    csrrci x26, 0x340, 16
+    csrrci x7, 0x340, 6
+    blt x16, x18, 1f
+    addi x2, x16, 1
+1:
+    blt x20, x13, 1f
+    addi x19, x20, 1
+1:
+    xori x3, x10, -969
+    csrrci x13, 0x340, 8
+    sw x22, 12(x30)
+    srli x5, x14, 3
+    bge x19, x24, 1f
+    addi x25, x19, 1
+1:
+    csrrw x23, 0x340, x15
+    addi x25, x9, -1154
+    bne x7, x28, 1f
+    addi x6, x7, 1
+1:
+    lbu x23, 28(x30)
+    csrrw x28, 0x340, x14
+    csrrwi x8, 0x340, 5
+    lui x21, 0x7439f
+    sltiu x10, x19, 358
+    csrrwi x7, 0x340, 18
+    auipc x19, 0x23c42
+    mulh x9, x22, x5
+    csrrc x21, 0x340, x8
+    and x25, x13, x1
+    bne x25, x6, 1f
+    addi x13, x25, 1
+1:
+    ori x1, x20, -1
+    auipc x8, 0x27bab
+    auipc x10, 0x7a678
+    mulh x24, x21, x21
+    csrrs x11, 0x340, x15
+    xori x10, x12, 326
+    srai x25, x20, 10
+    mulh x27, x4, x21
+    mul x26, x9, x21
+    bge x15, x19, 1f
+    addi x12, x15, 1
+1:
+    bgeu x22, x23, 1f
+    addi x17, x22, 1
+1:
+    csrrc x6, 0x340, x21
+    csrrwi x18, 0x340, 0
+    csrrw x1, 0x340, x2
+    csrrs x4, 0x340, x28
+    sra x23, x23, x3
+    auipc x28, 0xffdd6
+    mulh x26, x8, x14
+    auipc x29, 0
+    jalr x9, x29, 12
+    nop
+    lb x6, 20(x30)
+    lhu x19, 32(x30)
+    csrrs x26, 0x340, x15
+    csrrwi x20, 0x340, 14
+    lui x11, 0x2138f
+    lui x17, 0xe6c66
+    csrrci x25, 0x340, 12
+    slli x4, x28, 6
+    auipc x20, 0x6c7f
+    bge x24, x27, 1f
+    addi x9, x24, 1
+1:
+    blt x10, x1, 1f
+    addi x10, x10, 1
+1:
+    csrrw x27, 0x340, x17
+    bne x11, x20, 1f
+    addi x11, x11, 1
+1:
+    sltiu x8, x5, 1411
+    lw x11, 24(x30)
+    auipc x26, 0xce931
+    jal x10, 1f
+    nop
+1:
+    auipc x9, 0x4107
+    jal x14, 1f
+    nop
+1:
+    csrrci x25, 0x340, 2
 
 _finish:
     j _finish

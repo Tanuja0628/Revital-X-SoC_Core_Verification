@@ -4,6 +4,7 @@ work = ./work
 [Annotation]
 3D_Active_Annotation = FALSE
 [ColumnCfg]
+covtblAssertList_Assert = true
 m_hvpDetailPlanEditAttributeListView_V1.1_Name_pos = 0
 m_hvpDetailPlanEditAttributeListView_V1.1_Name_width = 100
 m_hvpDetailPlanEditAttributeListView_V1.1_Name = true
@@ -232,7 +233,7 @@ covtblInstancesList_V1.1_Branch_C = false
 covtblInstancesList_V1.1_Branch_X_pos = 30
 covtblInstancesList_V1.1_Branch_X_width = 0
 covtblInstancesList_V1.1_Branch_X = false
-covtblModulesList_V1.1_Name_pos = 4
+covtblModulesList_V1.1_Name_pos = 2
 covtblModulesList_V1.1_Name_width = 200
 covtblModulesList_V1.1_Name = true
 covtblModulesList_V1.1_Score_pos = 5
@@ -727,8 +728,8 @@ TclAutoSource =
 cmd_enter_form = FALSE
 SyncBrowserDir = TRUE
 SignalCaseInSensitive = FALSE
-version = Verdi_U-2023.03-SP1
 ToolbarIconSize = 
+version = Verdi_U-2023.03-SP1
 [GlobalProp]
 ErrWindow_Font = Helvetica_M_R_12
 [Globals]

@@ -1,0 +1,303 @@
+Command: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/infra/./simv +UVM_TESTNAME=corerv_test +ntb_random_seed=random -cm line+cond+fsm+tgl+branch -cm_name corerv_test_random -cm_dir ./coverage.vdb -l sim_corerv_test_random.log
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03_Full64; Runtime version U-2023.03_Full64;  Nov 18 15:29 2026
+
+Warning-[INV-RANDSEED-VAL] Invalid random seed value
+  Invalid random seed value passed through command line or environment 
+  variable. Seed value should be an integer. Using 1 as seed value
+
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test corerv_test...
+*Verdi* Loading libsscore_vcs202303.so
+FSDB Dumper for VCS, Release Verdi_U-2023.03-SP1, Linux x86_64/64bit, 05/28/2023
+(C) 1996 - 2023 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'inter.fsdb'
+*Verdi* : Begin traversing the scope (tb_top), layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the SVA assertions, layer (0).
+*Verdi* : End of traversing the SVA assertions.
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_monitor.sv(41) @ 0: uvm_test_top.env.agent.mon [MON_MEM] Loaded firmware into monitor memory map from firmware.hex
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_test.sv(19) @ 0: uvm_test_top [TEST] CPU Test started. Running firmware...
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 65000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000000 | INSTR: 80010f37] MATCH OK! -> Reg x30 = 0x80010000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 85000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000004 | INSTR: ff900093] MATCH OK! -> Reg x1 = 0xfffffff9
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 95000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000008 | INSTR: 0aa00113] MATCH OK! -> Reg x2 = 0x000000aa
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 105000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000000c | INSTR: ecd00193] MATCH OK! -> Reg x3 = 0xfffffecd
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 115000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000010 | INSTR: 2d900213] MATCH OK! -> Reg x4 = 0x000002d9
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 125000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000014 | INSTR: 0fe00293] MATCH OK! -> Reg x5 = 0x000000fe
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 135000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000018 | INSTR: 20c00313] MATCH OK! -> Reg x6 = 0x0000020c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 145000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000001c | INSTR: 29500393] MATCH OK! -> Reg x7 = 0x00000295
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 155000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000020 | INSTR: cf500413] MATCH OK! -> Reg x8 = 0xfffffcf5
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 165000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000024 | INSTR: 0a200493] MATCH OK! -> Reg x9 = 0x000000a2
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 195000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000028 | INSTR: 02481933] MATCH OK! -> Reg x18 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 205000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000002c | INSTR: 7f8d7a93] MATCH OK! -> Reg x21 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 215000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000030 | INSTR: 340878f3] MATCH OK! -> Reg x17 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 225000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000034 | INSTR: df946b93] MATCH OK! -> Reg x23 = 0xfffffdfd
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 235000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000038 | INSTR: 340599f3] MATCH OK! -> Reg x19 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 245000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000003c | INSTR: cc9669b7] MATCH OK! -> Reg x19 = 0xcc966000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 255000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000040 | INSTR: 00c46463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 265000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000044 | INSTR: 00140c93] MATCH OK! -> Reg x25 = 0xfffffcf6
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 275000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000048 | INSTR: 31cd7237] MATCH OK! -> Reg x4 = 0x31cd7000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 285000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000004c | INSTR: aa4aec37] MATCH OK! -> Reg x24 = 0xaa4ae000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 295000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000050 | INSTR: 556ca797] MATCH OK! -> Reg x15 = 0xd56ca050
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 305000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000054 | INSTR: 340dbaf3] MATCH OK! -> Reg x21 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 315000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000058 | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x80000058
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 325000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000005c | INSTR: 00ce8867] MATCH OK! -> Reg x16 = 0x80000060
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 365000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000064 | INSTR: 340323f3] MATCH OK! -> Reg x7 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 375000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000068 | INSTR: e5359ab7] MATCH OK! -> Reg x21 = 0xe5359000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 385000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000006c | INSTR: 2653d817] MATCH OK! -> Reg x16 = 0xa653d06c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 395000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000070 | INSTR: 00758463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 435000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000078 | INSTR: d9a633b7] MATCH OK! -> Reg x7 = 0xd9a63000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 445000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000007c | INSTR: 019f1423] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 455000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000080 | INSTR: 295a49b7] MATCH OK! -> Reg x19 = 0x295a4000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 465000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000084 | INSTR: 900c8d93] MATCH OK! -> Reg x27 = 0xfffff5f6
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 475000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000088 | INSTR: 01799463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 515000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000090 | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x80000090
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 525000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000094 | INSTR: 00ce8b67] MATCH OK! -> Reg x22 = 0x80000098
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 565000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000009c | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x8000009c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 575000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000a0 | INSTR: 00ce83e7] MATCH OK! -> Reg x7 = 0x800000a4
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 615000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000a8 | INSTR: 3403f673] MATCH OK! -> Reg x12 = 0x0000020c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 625000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000ac | INSTR: 533cf897] MATCH OK! -> Reg x17 = 0xd33cf0ac
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 635000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000b0 | INSTR: 00df0823] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 645000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000b4 | INSTR: 0083d313] MATCH OK! -> Reg x6 = 0x00800000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 655000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000b8 | INSTR: f56e2117] MATCH OK! -> Reg x2 = 0x756e20b8
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 665000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000bc | INSTR: 006cf463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 705000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000c4 | INSTR: 34065173] MATCH OK! -> Reg x2 = 0x00000208
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 715000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000c8 | INSTR: 01a9c533] MATCH OK! -> Reg x10 = 0x295a4000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 725000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000cc | INSTR: 3400e5f3] MATCH OK! -> Reg x11 = 0x0000000c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 735000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000d0 | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x800000d0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 745000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000d4 | INSTR: 00ce8d67] MATCH OK! -> Reg x26 = 0x800000d8
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 785000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000dc | INSTR: 01884db3] MATCH OK! -> Reg x27 = 0x0c19306c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 795000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000e0 | INSTR: 34039873] MATCH OK! -> Reg x16 = 0x0000000d
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 805000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000e4 | INSTR: 51e4be37] MATCH OK! -> Reg x28 = 0x51e4b000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 815000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000e8 | INSTR: 01e1d893] MATCH OK! -> Reg x17 = 0x00000003
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 825000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000ec | INSTR: 01af2a23] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 835000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000f0 | INSTR: 40a4d6b3] MATCH OK! -> Reg x13 = 0x000000a2
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 865000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000f4 | INSTR: 03b29b33] MATCH OK! -> Reg x22 = 0x0000000c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 875000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000f8 | INSTR: 21de5717] MATCH OK! -> Reg x14 = 0xa1de50f8
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 885000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800000fc | INSTR: 340ab473] MATCH OK! -> Reg x8 = 0x800000a4
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 915000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000100 | INSTR: 02341633] MATCH OK! -> Reg x12 = 0x00000099
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 925000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000104 | INSTR: 01061a93] MATCH OK! -> Reg x21 = 0x00990000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 955000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000108 | INSTR: 03b69433] MATCH OK! -> Reg x8 = 0x00000007
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 965000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000010c | INSTR: 9ba64c13] MATCH OK! -> Reg x24 = 0xfffff923
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 975000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000110 | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x80000110
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 985000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000114 | INSTR: 00ce8367] MATCH OK! -> Reg x6 = 0x80000118
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1045000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000011c | INSTR: 03848bb3] MATCH OK! -> Reg x23 = 0xfffba826
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1055000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000120 | INSTR: 34005973] MATCH OK! -> Reg x18 = 0x000000a4
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1065000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000124 | INSTR: e4ca7c37] MATCH OK! -> Reg x24 = 0xe4ca7000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1075000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000128 | INSTR: 008f1803] MATCH OK! -> Reg x16 = 0xfffffcf6
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1105000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000012c | INSTR: 02e499b3] MATCH OK! -> Reg x19 = 0xffffffc4
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1115000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000130 | INSTR: 46d8f697] MATCH OK! -> Reg x13 = 0xc6d8f130
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 1125000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000134 | INSTR: 0195e463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1165000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000013c | INSTR: 41f25113] MATCH OK! -> Reg x2 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1175000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000140 | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x80000140
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1185000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000144 | INSTR: 00ce8267] MATCH OK! -> Reg x4 = 0x80000148
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 1225000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000014c | INSTR: 0150e463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1235000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000150 | INSTR: 00108313] MATCH OK! -> Reg x6 = 0xfffffffa
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1245000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000154 | INSTR: aca93d93] MATCH OK! -> Reg x27 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1255000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000158 | INSTR: 98912ab7] MATCH OK! -> Reg x21 = 0x98912000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 1265000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000015c | INSTR: 01abc463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1275000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000160 | INSTR: 001b8d13] MATCH OK! -> Reg x26 = 0xfffba827
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1285000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000164 | INSTR: 000f0283] MATCH OK! -> Reg x5 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1295000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000168 | INSTR: 340e62f3] MATCH OK! -> Reg x5 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1325000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000016c | INSTR: 03169733] MATCH OK! -> Reg x14 = 0xffffffff
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1335000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000170 | INSTR: 177eeab7] MATCH OK! -> Reg x21 = 0x177ee000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1345000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000174 | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x80000174
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1355000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000178 | INSTR: 00ce81e7] MATCH OK! -> Reg x3 = 0x8000017c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1395000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000180 | INSTR: 40565b93] MATCH OK! -> Reg x23 = 0x00000004
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1425000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000184 | INSTR: 03508533] MATCH OK! -> Reg x10 = 0x5b87e000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1435000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000188 | INSTR: 3404ab73] MATCH OK! -> Reg x22 = 0x0000001c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1445000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000018c | INSTR: 00800e6f] MATCH OK! -> Reg x28 = 0x80000190
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 1485000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000194 | INSTR: 00a38463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1495000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000198 | INSTR: 00138113] MATCH OK! -> Reg x2 = 0x800000a5
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1505000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000019c | INSTR: 00cc1e33] MATCH OK! -> Reg x28 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1515000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001a0 | INSTR: 340472f3] MATCH OK! -> Reg x5 = 0x000000be
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1525000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001a4 | INSTR: 00800c6f] MATCH OK! -> Reg x24 = 0x800001a8
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 1565000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001ac | INSTR: 002d6463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1575000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001b0 | INSTR: 001d0c13] MATCH OK! -> Reg x24 = 0xfffba828
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1585000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001b4 | INSTR: 51393993] MATCH OK! -> Reg x19 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1595000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001b8 | INSTR: a44d0b37] MATCH OK! -> Reg x22 = 0xa44d0000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1605000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001bc | INSTR: 014f1e03] MATCH OK! -> Reg x28 = 0x000000d8
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1615000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001c0 | INSTR: 3530fbb7] MATCH OK! -> Reg x23 = 0x3530f000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1625000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001c4 | INSTR: 81ec3c93] MATCH OK! -> Reg x25 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1635000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001c8 | INSTR: 002b5193] MATCH OK! -> Reg x3 = 0x29134000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1645000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001cc | INSTR: 03b9c913] MATCH OK! -> Reg x18 = 0x0000003a
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1655000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001d0 | INSTR: d23bcb17] MATCH OK! -> Reg x22 = 0x523bc1d0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1665000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001d4 | INSTR: c0f4cc93] MATCH OK! -> Reg x25 = 0xfffffcad
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1695000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001d8 | INSTR: 024c1333] MATCH OK! -> Reg x6 = 0x00022beb
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1705000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001dc | INSTR: 868bba97] MATCH OK! -> Reg x21 = 0x068bb1dc
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1715000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001e0 | INSTR: 00139493] MATCH OK! -> Reg x9 = 0x00000148
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1725000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001e4 | INSTR: 34039773] MATCH OK! -> Reg x14 = 0x000000b6
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1735000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001e8 | INSTR: a78d8c97] MATCH OK! -> Reg x25 = 0x278d81e8
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1745000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001ec | INSTR: 1d0b4197] MATCH OK! -> Reg x3 = 0x9d0b41ec
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1755000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001f0 | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x800001f0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1765000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001f4 | INSTR: 00ce8ae7] MATCH OK! -> Reg x21 = 0x800001f8
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1805000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800001fc | INSTR: 83167713] MATCH OK! -> Reg x14 = 0x00000011
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1815000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000200 | INSTR: 340650f3] MATCH OK! -> Reg x1 = 0x800000a4
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1825000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000204 | INSTR: 2c6ef417] MATCH OK! -> Reg x8 = 0xac6ef204
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 1835000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000208 | INSTR: 01185463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1845000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000020c | INSTR: 00180213] MATCH OK! -> Reg x4 = 0xfffffcf7
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1855000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000210 | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x80000210
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1865000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000214 | INSTR: 00ce80e7] MATCH OK! -> Reg x1 = 0x80000218
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1925000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000021c | INSTR: 02e99533] MATCH OK! -> Reg x10 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 1935000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000220 | INSTR: 01c98463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1945000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000224 | INSTR: 00198113] MATCH OK! -> Reg x2 = 0x00000002
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 1955000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000228 | INSTR: 00bf2c23] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 1965000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000022c | INSTR: 2d27ed93] MATCH OK! -> Reg x27 = 0xd56ca2d2
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 1975000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000230 | INSTR: 00bbd463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2015000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000238 | INSTR: 01ac9cb3] MATCH OK! -> Reg x25 = 0xc6c0f400
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2025000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000023c | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x8000023c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2035000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000240 | INSTR: 00ce8967] MATCH OK! -> Reg x18 = 0x80000244
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2075000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000248 | INSTR: c42d2417] MATCH OK! -> Reg x8 = 0x442d2248
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2085000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000024c | INSTR: 403bda13] MATCH OK! -> Reg x20 = 0x06a61e00
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 2095000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000250 | INSTR: 01af2823] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2105000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000254 | INSTR: e4401897] MATCH OK! -> Reg x17 = 0x64401254
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 2115000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000258 | INSTR: 00864463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2155000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000260 | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x80000260
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2165000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000264 | INSTR: 00ce81e7] MATCH OK! -> Reg x3 = 0x80000268
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2205000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000026c | INSTR: 3405db73] MATCH OK! -> Reg x22 = 0x0000000c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2235000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000270 | INSTR: 02b61cb3] MATCH OK! -> Reg x25 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2245000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000274 | INSTR: f0422993] MATCH OK! -> Reg x19 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2255000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000278 | INSTR: 4076d993] MATCH OK! -> Reg x19 = 0xff8db1e2
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2265000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000027c | INSTR: 00ca23b3] MATCH OK! -> Reg x7 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2275000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000280 | INSTR: 340c20f3] MATCH OK! -> Reg x1 = 0x0000000b
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2285000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000284 | INSTR: 01838ab3] MATCH OK! -> Reg x21 = 0xfffba828
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2295000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000288 | INSTR: 3400bdf3] MATCH OK! -> Reg x27 = 0xfffba82b
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2305000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000028c | INSTR: 27cd5d37] MATCH OK! -> Reg x26 = 0x27cd5000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 2315000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000290 | INSTR: 007df463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2355000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000298 | INSTR: 012b1293] MATCH OK! -> Reg x5 = 0x00300000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2365000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000029c | INSTR: 340ae2f3] MATCH OK! -> Reg x5 = 0xfffba820
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2395000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002a0 | INSTR: 03821db3] MATCH OK! -> Reg x27 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 2405000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002a4 | INSTR: 002f0223] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2415000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002a8 | INSTR: 340b5973] MATCH OK! -> Reg x18 = 0xfffba835
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2425000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002ac | INSTR: 6f1deb17] MATCH OK! -> Reg x22 = 0xef1de2ac
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2455000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002b0 | INSTR: 023a9433] MATCH OK! -> Reg x8 = 0x00022beb
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2465000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002b4 | INSTR: 008001ef] MATCH OK! -> Reg x3 = 0x800002b8
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2525000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002bc | INSTR: 03098c33] MATCH OK! -> Reg x24 = 0x5b61672c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2535000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002c0 | INSTR: 5a18cc93] MATCH OK! -> Reg x25 = 0x644017f5
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2545000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002c4 | INSTR: d0927993] MATCH OK! -> Reg x19 = 0xfffffc01
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2555000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002c8 | INSTR: 0080076f] MATCH OK! -> Reg x14 = 0x800002cc
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2595000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002d0 | INSTR: 774a0e13] MATCH OK! -> Reg x28 = 0x06a62574
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 2605000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002d4 | INSTR: 00f25463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2645000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002dc | INSTR: 00800e6f] MATCH OK! -> Reg x28 = 0x800002e0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2685000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002e4 | INSTR: 340b23f3] MATCH OK! -> Reg x7 = 0x00000016
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 2695000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002e8 | INSTR: 01aad463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2705000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002ec | INSTR: 001a8793] MATCH OK! -> Reg x15 = 0xfffba829
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2715000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002f0 | INSTR: 3400f773] MATCH OK! -> Reg x14 = 0xef1de2be
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2725000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002f4 | INSTR: 34012773] MATCH OK! -> Reg x14 = 0xef1de2be
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 2735000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800002f8 | INSTR: 00a94463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2775000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000300 | INSTR: 34089df3] MATCH OK! -> Reg x27 = 0xef1de2be
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 2785000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000304 | INSTR: 00af0823] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2795000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000308 | INSTR: 340731f3] MATCH OK! -> Reg x3 = 0x64401254
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2805000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000030c | INSTR: e289e293] MATCH OK! -> Reg x5 = 0xfffffe29
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2815000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000310 | INSTR: 885d1837] MATCH OK! -> Reg x16 = 0x885d1000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2825000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000314 | INSTR: 3401e6f3] MATCH OK! -> Reg x13 = 0x00401040
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 2835000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000318 | INSTR: 00538463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2845000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000031c | INSTR: 00138b13] MATCH OK! -> Reg x22 = 0x00000017
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2855000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000320 | INSTR: 340f7873] MATCH OK! -> Reg x16 = 0x00401043
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 2865000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000324 | INSTR: 00ef2423] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2875000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000328 | INSTR: 00cf4603] MATCH OK! -> Reg x12 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2885000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000032c | INSTR: a613f937] MATCH OK! -> Reg x18 = 0xa613f000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2895000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000330 | INSTR: 34016e73] MATCH OK! -> Reg x28 = 0x00401041
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2905000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000334 | INSTR: 51874913] MATCH OK! -> Reg x18 = 0xef1de7a6
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2915000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000338 | INSTR: 010f4e03] MATCH OK! -> Reg x28 = 0x00000000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 2925000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000033c | INSTR: 00df2c23] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2935000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000340 | INSTR: 011856b3] MATCH OK! -> Reg x13 = 0x00000004
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 2945000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000344 | INSTR: 00bf2c23] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 2955000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000348 | INSTR: 00bb9463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 2995000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000350 | INSTR: 00981a13] MATCH OK! -> Reg x20 = 0x80208600
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3005000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000354 | INSTR: c85e6937] MATCH OK! -> Reg x18 = 0xc85e6000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 3015000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000358 | INSTR: 00e59463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3055000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000360 | INSTR: 340dda73] MATCH OK! -> Reg x20 = 0x00401043
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3065000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000364 | INSTR: 051dc237] MATCH OK! -> Reg x4 = 0x051dc000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 3075000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000368 | INSTR: 018f1823] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 3085000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000036c | INSTR: 01620463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3095000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000370 | INSTR: 00120193] MATCH OK! -> Reg x3 = 0x051dc001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3125000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000374 | INSTR: 03bd84b3] MATCH OK! -> Reg x9 = 0xebe00504
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3135000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000378 | INSTR: 41cd0b33] MATCH OK! -> Reg x22 = 0x27cd5000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3145000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000037c | INSTR: 8effa4b7] MATCH OK! -> Reg x9 = 0x8effa000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3155000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000380 | INSTR: 340db0f3] MATCH OK! -> Reg x1 = 0x0000001b
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 3165000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000384 | INSTR: 00368463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3175000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000388 | INSTR: 00168293] MATCH OK! -> Reg x5 = 0x00000005
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3185000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000038c | INSTR: 7957e293] MATCH OK! -> Reg x5 = 0xfffbafbd
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 3195000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000390 | INSTR: 02df1023] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3205000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000394 | INSTR: 34022c73] MATCH OK! -> Reg x24 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3215000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000398 | INSTR: 01199b93] MATCH OK! -> Reg x23 = 0xf8020000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3225000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000039c | INSTR: 011bda13] MATCH OK! -> Reg x20 = 0x00007c01
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3235000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003a0 | INSTR: e85becb7] MATCH OK! -> Reg x25 = 0xe85be000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 3245000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003a4 | INSTR: 00bf2223] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3255000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003a8 | INSTR: 419c5633] MATCH OK! -> Reg x12 = 0x00000001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3265000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003ac | INSTR: 75a6d297] MATCH OK! -> Reg x5 = 0xf5a6d3ac
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3275000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003b0 | INSTR: 79f24d17] MATCH OK! -> Reg x26 = 0xf9f243b0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3285000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003b4 | INSTR: 009c9c33] MATCH OK! -> Reg x24 = 0xe85be000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3315000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003b8 | INSTR: 03371c33] MATCH OK! -> Reg x24 = 0x00000043
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3325000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003bc | INSTR: 3408f5f3] MATCH OK! -> Reg x11 = 0x051dc001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 3335000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003c0 | INSTR: 01860463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3345000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003c4 | INSTR: 00160313] MATCH OK! -> Reg x6 = 0x00000002
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 3355000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003c8 | INSTR: 034f0023] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3365000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003cc | INSTR: 008001ef] MATCH OK! -> Reg x3 = 0x800003d0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 3405000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003d4 | INSTR: 016be463] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3415000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003d8 | INSTR: 001b8613] MATCH OK! -> Reg x12 = 0xf8020001
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3425000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003dc | INSTR: 3407d7f3] MATCH OK! -> Reg x15 = 0x051dc000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3435000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003e0 | INSTR: 34019873] MATCH OK! -> Reg x16 = 0x0000000f
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3445000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003e4 | INSTR: 008000ef] MATCH OK! -> Reg x1 = 0x800003e8
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3485000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003ec | INSTR: 954b08b7] MATCH OK! -> Reg x17 = 0x954b0000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3495000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003f0 | INSTR: 00000e97] MATCH OK! -> Reg x29 = 0x800003f0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3505000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003f4 | INSTR: 00ce8d67] MATCH OK! -> Reg x26 = 0x800003f8
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3545000: uvm_test_top.env.scb [SCB_MATCH] [PC: 800003fc | INSTR: 340a24f3] MATCH OK! -> Reg x9 = 0x800003d0
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3555000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000400 | INSTR: 340a9d73] MATCH OK! -> Reg x26 = 0x80007fd1
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3585000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000404 | INSTR: 024a19b3] MATCH OK! -> Reg x19 = 0x0000027a
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3595000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000408 | INSTR: 34086473] MATCH OK! -> Reg x8 = 0xfffba828
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3605000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000040c | INSTR: 00dd9993] MATCH OK! -> Reg x19 = 0xbc57c000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3615000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000410 | INSTR: 008f0783] MATCH OK! -> Reg x15 = 0xffffffbe
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3625000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000414 | INSTR: 0080056f] MATCH OK! -> Reg x10 = 0x80000418
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3665000: uvm_test_top.env.scb [SCB_MATCH] [PC: 8000041c | INSTR: a53c6d97] MATCH OK! -> Reg x27 = 0x253c641c
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3675000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000420 | INSTR: 014241b3] MATCH OK! -> Reg x3 = 0x051dbc01
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(52) @ 3705000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000424 | INSTR: 03ab0933] MATCH OK! -> Reg x18 = 0x594e5000
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_scoreboard.sv(56) @ 3715000: uvm_test_top.env.scb [SCB_MATCH] [PC: 80000428 | INSTR: 0000006f] MATCH OK! -> Executed safely
+UVM_INFO /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_test.sv(26) @ 50000000: uvm_test_top [TEST] Timeout reached. Ending simulation.
+UVM_INFO /home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_objection.svh(1274) @ 50000000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  241
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[MON_MEM]     1
+[RNTST]     1
+[SCB_MATCH]   236
+[TEST]     2
+[TEST_DONE]     1
+$finish called from file "/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/base/uvm_root.svh", line 437.
+$finish at simulation time             50000000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 50000000 ps
+CPU Time:      0.360 seconds;       Data structure size:   3.0Mb
+Wed Nov 18 15:29:47 2026

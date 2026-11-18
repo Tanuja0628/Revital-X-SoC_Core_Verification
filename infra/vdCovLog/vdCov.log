@@ -1,34 +1,18 @@
-[DVCDT132] 
-Failed to load the file named './coverage/corerv_test'. The test included in the file will be ignored. 
-Details are as the following:
-Load Failed: 
-Error-[UCAPI-XLE] Corrupted database file
-./coverage.vdb/snps/coverage/db/testdata/corerv_test/vcmArguments.xml, 1
-  The coverage database file is corrupted: no element found. The file may have
-  been overwritten by another process, or it may not have been written out 
-  correctly in the first place - for example, due to disk space limits.
-  If you cannot regenerate the database please contact 
-  vcs_support@synopsys.com for more help.
-[DVCDT132] 
-Failed to load the file named './coverage/corerv_test'. The test included in the file will be ignored. 
-Details are as the following:
-Load Failed: 
-Error-[UCAPI-XLE] Corrupted database file
-./coverage.vdb/snps/coverage/db/testdata/corerv_test/siminfo.xml, 1
-  The coverage database file is corrupted: no element found. The file may have
-  been overwritten by another process, or it may not have been written out 
-  correctly in the first place - for example, due to disk space limits.
-  If you cannot regenerate the database please contact 
-  vcs_support@synopsys.com for more help.
-Corrupt test found: 
-Error-[UCAPI-TESTCORR] Test found corrupted
-  The database test directory for the test './coverage/corerv_test' may have 
-  been corrupted. Please try regenerating it. If the problem still persists, 
-  please contact vcs_support@synopsys.com for information.
-[DVCDT137] 
-Failed to load tests from './coverage/corerv_test'.
-Please verify that all the test directories are valid.
-The design './coverage.vdb' was loaded successfully.
-The following tests are merged/loaded from "./coverage.vdb",
-    ./coverage/corerv_test
-    ./coverage/test
+[UCAPI-INSTANCEMISMATCH] Instance Data Mismatch
+  Database mismatch for instance data. Number of Line coverage objects for 
+  instance 'tb_top.dut.dram' in test file 'test_1' of test-data directory 
+  'coverage.vdb' is not the same as in base design. Coverage data of this 
+  instance won't be merged.
+  Please ensure that all coverage tests are generated from same design. If 
+  problem still persists please contact vcs_support@synopsys.com.
+[UCAPI-INSTANCEMISMATCH] Instance Data Mismatch
+  Database mismatch for instance data. Number of Branch coverage objects for 
+  instance 'tb_top.dut.dram' in test file 'test_1' of test-data directory 
+  'coverage.vdb' is not the same as in base design. Coverage data of this 
+  instance won't be merged.
+  Please ensure that all coverage tests are generated from same design. If 
+  problem still persists please contact vcs_support@synopsys.com.
+The design 'coverage.vdb' was loaded successfully.
+The following tests are merged/loaded from "coverage.vdb",
+    coverage/corerv_test_random
+    coverage/test_1

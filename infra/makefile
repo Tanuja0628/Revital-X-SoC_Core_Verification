@@ -22,18 +22,18 @@ TB_FILES  = $(TB_SV_DIR)/corerv_if.sv \
             $(TB_SV_DIR)/corerv_pkg.sv \
             $(TB_SV_DIR)/tb_top.sv
 
-TESTNAME = corerv_test
-SEED     = random
+TESTNAME ?= corerv_test
+SEED     ?= random
+COV_NAME ?= $(TESTNAME)_$(SEED)
 
 # Synopsys Compile Flags (-kdb enables Verdi/FSDB dumping, -cm enables coverage)
 VCS_FLAGS = -full64 -sverilog -ntb_opts uvm -debug_access+all -kdb -timescale=1ns/1ps +lint=TFIPC-L
 VCS_COV_FLAGS = -cm line+cond+fsm+tgl+branch -cm_dir ./coverage.vdb
-#coverage 
-COV_NAME ?= $(TESTNAME)
-# Synopsys Runtime Flags
+
+# Synopsys Runtime Flags (includes -cm_name $(COV_NAME) so all 50 seeds merge into coverage.vdb!)
 SIM_FLAGS = +UVM_TESTNAME=$(TESTNAME) +ntb_random_seed=$(SEED) \
-            -cm line+cond+fsm+tgl+branch  -cm_dir ./coverage.vdb \
-            -l sim_$(TESTNAME).log
+            -cm line+cond+fsm+tgl+branch -cm_name $(COV_NAME) -cm_dir ./coverage.vdb \
+            -l sim_$(COV_NAME).log
 
 # ==============================================================================
 # Targets
@@ -41,8 +41,7 @@ SIM_FLAGS = +UVM_TESTNAME=$(TESTNAME) +ntb_random_seed=$(SEED) \
 
 all: run
 
-# 1. Manually compile the C++ wrapper into a shared object (.so) 
-# Swapped Cadence DPI includes for Synopsys VCS DPI includes: -I$(VCS_HOME)/include
+# 1. Manually compile the C++ wrapper into a shared object (.so)
 spike_wrapper.so: $(TB_CPP_DIR)/spike_wrapper.cc
 	g++ -fPIC -shared -std=c++11 \
 	-I$(RISCV)/include -I$(RISCV) -I$(RISCV)/build -I$(RISCV)/softfloat -I$(RISCV)/fesvr \
@@ -51,29 +50,36 @@ spike_wrapper.so: $(TB_CPP_DIR)/spike_wrapper.cc
 	-L$(RISCV)/lib -L$(DTC_DIR)/libfdt \
 	-lriscv -lfesvr -lsoftfloat -ldisasm -lfdt -o spike_wrapper.so
 
-# 2. Compile Design with VCS
+# 2. Compile Design with VCS (supports both 'make build' and 'make compile')
 build: spike_wrapper.so
 	@echo "--------------------------------------------------------"
 	@echo " Compiling UVM Testbench with Synopsys VCS"
 	@echo "--------------------------------------------------------"
 	vcs $(VCS_FLAGS) $(VCS_COV_FLAGS) $(RTL_FILES) $(TB_FILES) ./spike_wrapper.so
 
-# 3. Run the generated simv executable
-run: build
+compile: build
+
+# 3. Run simulation ONLY without recompiling (used inside the 50-seed loop)
+sim:
 	@echo "--------------------------------------------------------"
-	@echo " Starting UVM Simulation: $(TESTNAME)"
+	@echo " Starting UVM Simulation: $(TESTNAME) (Cov: $(COV_NAME))"
 	@echo "--------------------------------------------------------"
 	./simv $(SIM_FLAGS)
 
-# 4. Generate HTML Coverage Reports via Synopsys URG (Unified Report Generator)
+# 4. Compile + Run together
+run: build sim
+
+# 5. Generate HTML & Text Merged Coverage Reports via Synopsys URG
 cov:
 	@echo "--------------------------------------------------------"
-	@echo " Generating Coverage Reports"
+	@echo " Generating Merged Coverage Reports"
 	@echo "--------------------------------------------------------"
-	urg -dir coverage.vdb -report urgReport
+	urg -dir coverage.vdb -dbname merged_coverage.vdb -format both -metric line+cond+fsm+tgl+branch+group -report urgReport
 	@echo "HTML report generated at: urgReport/dashboard.html"
 
-# 5. Open GUI Debug (Verdi or DVE)
+urg: cov
+
+# 6. Open GUI Debug (Verdi or DVE)
 waves_verdi:
 	verdi -ssf inter.fsdb &
 
@@ -84,7 +90,7 @@ cov_gui:
 	verdi -cov -covdir coverage.vdb &
 
 clean:
-	rm -rf csrc simv simv.daidir *.vdb urgReport DVEfiles inter.vpd inter.fsdb *.log *.so
+	rm -rf csrc simv simv.daidir *.vdb cov_work urgReport DVEfiles inter.vpd inter.fsdb *.log *.so
 	rm -rf ucli.key vc_hdrs.h verdiLog novas.*
 
-.PHONY: all build run cov waves_verdi waves_dve cov_gui clean
+.PHONY: all build compile sim run cov urg waves_verdi waves_dve cov_gui clean

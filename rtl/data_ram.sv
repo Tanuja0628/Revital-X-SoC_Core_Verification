@@ -33,8 +33,10 @@ sp_ram #(
     .be_i(be_i)
 );
 always_ff @(posedge clk) begin
-    be_i_reg <= be_i;
-    sign_ext_i_reg <= sign_ext_i;
+	if (en_i) begin
+            be_i_reg       <= be_i;
+            sign_ext_i_reg <= sign_ext_i;
+        end
 end
 // load access for lb/lh/lw with sign/zero extension
 always_comb begin

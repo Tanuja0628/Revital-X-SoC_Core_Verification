@@ -92,87 +92,89 @@ VCS compile option:
  option[2]: +ntb_random_seed=random
  option[3]: -cm
  option[4]: line+cond+fsm+tgl+branch
- option[5]: -cm_dir
- option[6]: ./coverage.vdb
- option[7]: -l
- option[8]: sim_corerv_test.log
- option[9]: /home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/bin/vcs1
- option[10]: -Mcc=gcc
- option[11]: -Mcplusplus=g++
- option[12]: -Masflags=
- option[13]: -Mcfl= -pipe -DVCS -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/home/install/synopsys_tools/VCS/vcs/U-2023.03/include 
- option[14]: -Mxllcflags=
- option[15]: -Mxcflags= -pipe -DVCS -DUVM_DPI_DO_TYPE_CHECK -fPIC -I/home/install/synopsys_tools/VCS/vcs/U-2023.03/include
- option[16]: -Mldflags= -rdynamic 
- option[17]: -Mout=simv
- option[18]: -Mamsrun=
- option[19]: -Mvcsaceobjs=
- option[20]: -Mobjects= /home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib/libvirsim.so /home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib/liberrorinf.so /home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib/libsnpsmalloc.so /home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib/libvfs.so /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/infra/./spike_wrapper.so 
- option[21]: -Mexternalobj=
- option[22]: -Msaverestoreobj=/home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib/vcs_save_restore_new.o
- option[23]: -Mcrt0=
- option[24]: -Mcrtn=
- option[25]: -Mcsrc=/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/dpi/uvm_dpi.cc /home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/dpi/uvm_verdi_dpi.cpp 
- option[26]: -Msyslibs=/home/install/synopsys_tools/verdi/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/pli.a -ldl 
- option[27]: +define+UVM_VERDI_VIF_RECORD
- option[28]: +define+UVM_VCS_RECORD
- option[29]: +incdir+/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/vcs
- option[30]: /home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_pkg.sv
- option[31]: /home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv
- option[32]: +incdir+/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi
- option[33]: /home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv
- option[34]: -full64
- option[35]: -ntb_opts
- option[36]: uvm
- option[37]: +incdir+/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/
- option[38]: -debug_access+all
- option[39]: +vpi
- option[40]: +vcsd1
- option[41]: +itf+/home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib/vcsdp_lite.tab
- option[42]: -kdb
- option[43]: -Xufe=2steps
- option[44]: -timescale=1ns/1ps
- option[45]: +lint=TFIPC-L
- option[46]: -cm
- option[47]: line+cond+fsm+tgl+branch
- option[48]: -cm_dir
- option[49]: ./coverage.vdb
- option[50]: -picarchive
- option[51]: -P
- option[52]: /home/install/synopsys_tools/verdi/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/verdi.tab
- option[53]: -fsdb
- option[54]: -sverilog
- option[55]: -gen_obj
- option[56]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu_in1_mux.sv
- option[57]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu_in2_mux.sv
- option[58]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu_mul_csr_mux.sv
- option[59]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu.sv
- option[60]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Control_Unit.sv
- option[61]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/CoreRV.sv
- option[62]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/csr_register_file.sv
- option[63]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/csr_unit.sv
- option[64]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/data_ram.sv
- option[65]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/dp_ram.sv
- option[66]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/immediate_generator.sv
- option[67]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/instr_ram.sv
- option[68]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/interrupt_controller.sv
- option[69]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/LSU_RVX.sv
- option[70]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Memory_Ctrl.sv
- option[71]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/memtoreg_mux.sv
- option[72]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/pc_mux.sv
- option[73]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Pipelined_M.sv
- option[74]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/register_file.sv
- option[75]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/sp_ram.sv
- option[76]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Stage1.sv
- option[77]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Stage2.sv
- option[78]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/stall_controller.sv
- option[79]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_if.sv
- option[80]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_pkg.sv
- option[81]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/tb_top.sv
- option[82]: +define+UVM_DIRECTC_OPTS
- option[83]: -load
- option[84]: /home/install/synopsys_tools/verdi/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
- option[85]: timescale=1ns/1ps
+ option[5]: -cm_name
+ option[6]: corerv_test_random
+ option[7]: -cm_dir
+ option[8]: ./coverage.vdb
+ option[9]: -l
+ option[10]: sim_corerv_test_random.log
+ option[11]: /home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/bin/vcs1
+ option[12]: -Mcc=gcc
+ option[13]: -Mcplusplus=g++
+ option[14]: -Masflags=
+ option[15]: -Mcfl= -pipe -DVCS -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/home/install/synopsys_tools/VCS/vcs/U-2023.03/include 
+ option[16]: -Mxllcflags=
+ option[17]: -Mxcflags= -pipe -DVCS -DUVM_DPI_DO_TYPE_CHECK -fPIC -I/home/install/synopsys_tools/VCS/vcs/U-2023.03/include
+ option[18]: -Mldflags= -rdynamic 
+ option[19]: -Mout=simv
+ option[20]: -Mamsrun=
+ option[21]: -Mvcsaceobjs=
+ option[22]: -Mobjects= /home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib/libvirsim.so /home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib/liberrorinf.so /home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib/libsnpsmalloc.so /home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib/libvfs.so /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/infra/./spike_wrapper.so 
+ option[23]: -Mexternalobj=
+ option[24]: -Msaverestoreobj=/home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib/vcs_save_restore_new.o
+ option[25]: -Mcrt0=
+ option[26]: -Mcrtn=
+ option[27]: -Mcsrc=/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/dpi/uvm_dpi.cc /home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/dpi/uvm_verdi_dpi.cpp 
+ option[28]: -Msyslibs=/home/install/synopsys_tools/verdi/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/pli.a -ldl 
+ option[29]: +define+UVM_VERDI_VIF_RECORD
+ option[30]: +define+UVM_VCS_RECORD
+ option[31]: +incdir+/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/vcs
+ option[32]: /home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/uvm_pkg.sv
+ option[33]: /home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv
+ option[34]: +incdir+/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi
+ option[35]: /home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv
+ option[36]: -full64
+ option[37]: -ntb_opts
+ option[38]: uvm
+ option[39]: +incdir+/home/install/synopsys_tools/VCS/vcs/U-2023.03/etc/uvm/
+ option[40]: -debug_access+all
+ option[41]: +vpi
+ option[42]: +vcsd1
+ option[43]: +itf+/home/install/synopsys_tools/VCS/vcs/U-2023.03/linux64/lib/vcsdp_lite.tab
+ option[44]: -kdb
+ option[45]: -Xufe=2steps
+ option[46]: -timescale=1ns/1ps
+ option[47]: +lint=TFIPC-L
+ option[48]: -cm
+ option[49]: line+cond+fsm+tgl+branch
+ option[50]: -cm_dir
+ option[51]: ./coverage.vdb
+ option[52]: -picarchive
+ option[53]: -P
+ option[54]: /home/install/synopsys_tools/verdi/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/verdi.tab
+ option[55]: -fsdb
+ option[56]: -sverilog
+ option[57]: -gen_obj
+ option[58]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu_in1_mux.sv
+ option[59]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu_in2_mux.sv
+ option[60]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu_mul_csr_mux.sv
+ option[61]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu.sv
+ option[62]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Control_Unit.sv
+ option[63]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/CoreRV.sv
+ option[64]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/csr_register_file.sv
+ option[65]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/csr_unit.sv
+ option[66]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/data_ram.sv
+ option[67]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/dp_ram.sv
+ option[68]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/immediate_generator.sv
+ option[69]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/instr_ram.sv
+ option[70]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/interrupt_controller.sv
+ option[71]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/LSU_RVX.sv
+ option[72]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Memory_Ctrl.sv
+ option[73]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/memtoreg_mux.sv
+ option[74]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/pc_mux.sv
+ option[75]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Pipelined_M.sv
+ option[76]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/register_file.sv
+ option[77]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/sp_ram.sv
+ option[78]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Stage1.sv
+ option[79]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Stage2.sv
+ option[80]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/stall_controller.sv
+ option[81]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_if.sv
+ option[82]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_pkg.sv
+ option[83]: /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/tb_top.sv
+ option[84]: +define+UVM_DIRECTC_OPTS
+ option[85]: -load
+ option[86]: /home/install/synopsys_tools/verdi/verdi/U-2023.03-SP1/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
+ option[87]: timescale=1ns/1ps
 Chronologic Simulation VCS Release U-2023.03_Full64
 Linux 3.10.0-1160.el7.x86_64 #1 SMP Tue Aug 18 14:50:17 EDT 2020 x86_64
 CPU cores: 20
@@ -195,14 +197,15 @@ Runtime environment variables:
 NANOTIME_HOME=/home/install/synopsys_tools/nanoTime/nt/U-2022.12-SP3
 MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
 SHELL=/bin/bash
+VTE_VERSION=5204
 CUST_INFRA_HOME=/home/install/synopsys_tools/cust_infra/custominfrastructure/V-2023.12
 _=/usr/bin/make
 HISTCONTROL=ignoredups
 XDG_DATA_DIRS=/home/user1/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
 QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
 LESSOPEN=||/usr/bin/lesspipe.sh %s
-SSH_CONNECTION=10.20.25.238 65231 10.20.31.216 22
-PATH=/home/user1/Darshan_Verification/Tanuja/core_uvm/dtc:/home/install/synopsys_tools/embedit/embedit/U-2023.03-SP1/bin:/home/install/synopsys_tools/euclide/linux.gtk.x86_64:/home/install/synopsys_tools/custom_sim/xa/T-2022.06/bin:/home/install/synopsys_tools/cust_infra/customcompiler/V-2023.12/bin:/home/install/synopsys_tools/cust_infra/custominfrastructure/V-2023.12/bin:/home/install/synopsys_tools/hsimplus/hsim/U-2023.03/hsimplus/bin:/home/install/synopsys_tools/finesim/finesim/U-2023.03/bin:/home/install/synopsys_tools/hspice/hspice/U-2023.03/hspice/bin:/home/install/synopsys_tools/hsimplus/icvalidator/U-2022.12-SP2/bin:/home/install/synopsys_tools/prime_wave/primewave/U-2023.03/bin:/home/install/synopsys_tools/prime_sim/primesim/U-2023.03/bin:/home/install/synopsys_tools/prime_power/prime/U-2022.12-SP3/bin:/home/install/synopsys_tools/pT_v/prime/U-2022.12-SP3/bin:/home/install/synopsys_tools/nanoTime/nt/U-2022.12-SP3/bin:/home/install/synopsys_tools/custom_sim/xa/T-2022.06/bin:/home/install/synopsys_tools/spyglass/spyglass/U-2023.03-SP2/SPYGLASS_HOME/bin:/home/install/synopsys_tools/hspice/hspice/U-2023.03/hspice/bin:/home/install/synopsys_tools/starRC/starrc/U-2022.12-SP3/bin:/home/install/synopsys_tools/PrimeTime/prime/T-2022.03-SP2/bin:/home/install/synopsys_tools/icc2/icc2/U-2022.12-SP3/bin:/home/install/synopsys_tools/icc2/icc2/U-2022.12-SP3/bin:/home/install/synopsys_tools/syn_vT/syn/T-2022.03-SP5/bin:/home/install/synopsys_tools/verdi/verdi/U-2023.03-SP1/bin:/home/install/synopsys_tools/VCS/vcs/U-2023.03/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/user1/.local/bin:/home/user1/bin
+SSH_CONNECTION=10.20.29.43 53384 10.20.31.216 22
+PATH=/home/user1/Darshan_Verification/Tanuja/core_uvm/dtc:/home/install/synopsys_tools/embedit/embedit/U-2023.03-SP1/bin:/home/install/synopsys_tools/euclide/linux.gtk.x86_64:/home/install/synopsys_tools/custom_sim/xa/T-2022.06/bin:/home/install/synopsys_tools/cust_infra/customcompiler/V-2023.12/bin:/home/install/synopsys_tools/cust_infra/custominfrastructure/V-2023.12/bin:/home/install/synopsys_tools/hsimplus/hsim/U-2023.03/hsimplus/bin:/home/install/synopsys_tools/finesim/finesim/U-2023.03/bin:/home/install/synopsys_tools/hspice/hspice/U-2023.03/hspice/bin:/home/install/synopsys_tools/hsimplus/icvalidator/U-2022.12-SP2/bin:/home/install/synopsys_tools/prime_wave/primewave/U-2023.03/bin:/home/install/synopsys_tools/prime_sim/primesim/U-2023.03/bin:/home/install/synopsys_tools/prime_power/prime/U-2022.12-SP3/bin:/home/install/synopsys_tools/pT_v/prime/U-2022.12-SP3/bin:/home/install/synopsys_tools/nanoTime/nt/U-2022.12-SP3/bin:/home/install/synopsys_tools/custom_sim/xa/T-2022.06/bin:/home/install/synopsys_tools/spyglass/spyglass/U-2023.03-SP2/SPYGLASS_HOME/bin:/home/install/synopsys_tools/hspice/hspice/U-2023.03/hspice/bin:/home/install/synopsys_tools/starRC/starrc/U-2022.12-SP3/bin:/home/install/synopsys_tools/PrimeTime/prime/T-2022.03-SP2/bin:/home/install/synopsys_tools/icc2/icc2/U-2022.12-SP3/bin:/home/install/synopsys_tools/icc2/icc2/U-2022.12-SP3/bin:/home/install/synopsys_tools/syn_vT/syn/T-2022.03-SP5/bin:/home/install/synopsys_tools/verdi/verdi/U-2023.03-SP1/bin:/home/install/synopsys_tools/VCS/vcs/U-2023.03/bin:/home/install/synopsys_tools/embedit/embedit/U-2023.03-SP1/bin:/home/install/synopsys_tools/euclide/linux.gtk.x86_64:/home/install/synopsys_tools/custom_sim/xa/T-2022.06/bin:/home/install/synopsys_tools/cust_infra/customcompiler/V-2023.12/bin:/home/install/synopsys_tools/cust_infra/custominfrastructure/V-2023.12/bin:/home/install/synopsys_tools/hsimplus/hsim/U-2023.03/hsimplus/bin:/home/install/synopsys_tools/finesim/finesim/U-2023.03/bin:/home/install/synopsys_tools/hspice/hspice/U-2023.03/hspice/bin:/home/install/synopsys_tools/hsimplus/icvalidator/U-2022.12-SP2/bin:/home/install/synopsys_tools/prime_wave/primewave/U-2023.03/bin:/home/install/synopsys_tools/prime_sim/primesim/U-2023.03/bin:/home/install/synopsys_tools/prime_power/prime/U-2022.12-SP3/bin:/home/install/synopsys_tools/pT_v/prime/U-2022.12-SP3/bin:/home/install/synopsys_tools/nanoTime/nt/U-2022.12-SP3/bin:/home/install/synopsys_tools/custom_sim/xa/T-2022.06/bin:/home/install/synopsys_tools/spyglass/spyglass/U-2023.03-SP2/SPYGLASS_HOME/bin:/home/install/synopsys_tools/hspice/hspice/U-2023.03/hspice/bin:/home/install/synopsys_tools/starRC/starrc/U-2022.12-SP3/bin:/home/install/synopsys_tools/PrimeTime/prime/T-2022.03-SP2/bin:/home/install/synopsys_tools/icc2/icc2/U-2022.12-SP3/bin:/home/install/synopsys_tools/icc2/icc2/U-2022.12-SP3/bin:/home/install/synopsys_tools/syn_vT/syn/T-2022.03-SP5/bin:/home/install/synopsys_tools/verdi/verdi/U-2023.03-SP1/bin:/home/install/synopsys_tools/VCS/vcs/U-2023.03/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/user1/.local/bin:/home/user1/bin
 LM_LICENSE_FILE=27020@14.139.1.126
 PT_HOME=/home/install/synopsys_tools/PrimeTime/prime/T-2022.03-SP2
 QT_GRAPHICSSYSTEM_CHECKED=1
@@ -229,20 +232,20 @@ SELINUX_LEVEL_REQUESTED=
 HSPICE_HOME=/home/install/synopsys_tools/hspice/hspice/U-2023.03/hspice
 HOSTNAME=cegdececwisd5.annauniv.edu
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+COLORTERM=truecolor
 DTC_DIR=/home/user1/Darshan_Verification/Tanuja/core_uvm/dtc
-SHLVL=1
+SHLVL=2
 ICC2_HOME=/home/install/synopsys_tools/icc2/icc2/U-2022.12-SP3
-XDG_SESSION_ID=2627
+XDG_SESSION_ID=12
 USER=user1
 QTLIB=/usr/lib64/qt-3.3/lib
 BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
 }
-OLDPWD=/home/user1
 FINESIM_HOME=/home/install/synopsys_tools/finesim/finesim/U-2023.03
 ICC2_LM_HOME=/home/install/synopsys_tools/icc2/icc2/U-2022.12-SP3
 MAKEFLAGS=
 MFLAGS=
-SSH_CLIENT=10.20.25.238 65231 22
+SSH_CLIENT=10.20.29.43 53384 22
 MAIL=/var/spool/mail/user1
 LOADEDMODULES=
 SPYGLASS_HOME=/home/install/synopsys_tools/spyglass/spyglass/U-2023.03-SP2/SPYGLASS_HOME
@@ -251,14 +254,16 @@ DC_HOME=/home/install/synopsys_tools/syn_vT/syn/T-2022.03-SP5
 ICV_HOME_DIR=/home/install/synopsys_tools/hsimplus/icvalidator/U-2022.12-SP2
 EMBEDIT_HOME=/home/install/synopsys_tools/embedit/embedit/U-2023.03-SP1
 PRIMEPOWER_HOME=/home/install/synopsys_tools/prime_power/prime/U-2022.12-SP3
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/e9dc3b1d_0fd9_4e86_99be_a504797b420e
 SELINUX_ROLE_REQUESTED=
-STARRC_HOME=/home/install/synopsys_tools/starRC/starrc/U-2022.12-SP3
+GNOME_TERMINAL_SERVICE=:1.25
 HISTSIZE=1000
 QTINC=/usr/lib64/qt-3.3/include
 QTDIR=/usr/lib64/qt-3.3
 LANG=en_US.UTF-8
 TERM=xterm-256color
 PRIMESIM_HOME=/home/install/synopsys_tools/prime_sim/primesim/U-2023.03
+STARRC_HOME=/home/install/synopsys_tools/starRC/starrc/U-2022.12-SP3
 MAKELEVEL=1
 VCS_PATHMAP_PRELOAD_DONE=1
 VCS_STACK_EXEC=true
@@ -273,124 +278,126 @@ argv[1]=+UVM_TESTNAME=corerv_test
 argv[2]=+ntb_random_seed=random
 argv[3]=-cm
 argv[4]=line+cond+fsm+tgl+branch
-argv[5]=-cm_dir
-argv[6]=./coverage.vdb
-argv[7]=-l
-argv[8]=sim_corerv_test.log
-278 profile - 100
-          CPU/Mem usage: 0.030 sys,  0.250 user,  371.72M mem
-279 Elapsed time:    0:00:02    Wed Nov 18 09:44:56 2026
-280 User CPU time used: 0 seconds
-281 System CPU time used: 0 seconds
-282 pliAppInit
-283 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
-284 FSDB_GATE is set.
-285 FSDB_RTL is set.
-286 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
-287 Enable Parallel Dumping.
-288 pliAppMiscSet: New Sim Round
-289 pliEntryInit
-290 LIBSSCORE=found /home/install/synopsys_tools/verdi/verdi/U-2023.03-SP1/share/PLI/lib/LINUXAMD64/libsscore_vcs202303.so through $NOVAS_HOME setting.
-291 FSDB Dumper for VCS, Release Verdi_U-2023.03-SP1, Linux x86_64/64bit, 05/28/2023
-292 (C) 1996 - 2023 by Synopsys, Inc.
-293 sps_call_fsdbDumpfile_main at 0 : /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/tb_top.sv(128)
-294 argv[0]: (inter.fsdb)
-295 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
-296 *Verdi* : Create FSDB file 'inter.fsdb'
-297 [spi_vcs_vd_ppi_create_root]: no upf option
-298 compile option from '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/infra/simv.daidir/vcs_rebuild'.
-299   "vcs '-full64' '-sverilog' '-ntb_opts' 'uvm' '-debug_access+all' '-kdb' '-timescale=1ns/1ps' '+lint=TFIPC-L' '-cm' 'line+cond+fsm+tgl+branch' '-cm_dir' './coverage.vdb' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu_in1_mux.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu_in2_mux.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu_mul_csr_mux.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Control_Unit.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/CoreRV.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/csr_register_file.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/csr_unit.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/data_ram.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/dp_ram.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/immediate_generator.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/instr_ram.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/interrupt_controller.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/LSU_RVX.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Memory_Ctrl.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/memtoreg_mux.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/pc_mux.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Pipelined_M.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/register_file.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/sp_ram.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Stage1.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Stage2.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/stall_controller.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_if.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_pkg.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/tb_top.sv' './spike_wrapper.so' 2>&1"
-300 DVDI_is_vir_unload_enabled is enable
-301 FSDB_VCS_ENABLE_NATIVE_VC is enable
-302 sps_call_fsdbDumpvars_vd_main at 0 : /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/tb_top.sv(129)
-303 argv[0]: (0)
-304 argv[1]: (handle) tb_top
-305 *Verdi* : Begin traversing the scope (tb_top), layer (0).
-306 *Verdi* : End of traversing.
-307 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.280 user,  488.85M mem
-                   incr: 0.010 sys,  0.030 user,  24.69M mem
-                   accu: 0.010 sys,  0.030 user,  24.69M mem
-              accu incr: 0.010 sys,  0.030 user,  24.69M mem
+argv[5]=-cm_name
+argv[6]=corerv_test_random
+argv[7]=-cm_dir
+argv[8]=./coverage.vdb
+argv[9]=-l
+argv[10]=sim_corerv_test_random.log
+285 profile - 100
+          CPU/Mem usage: 0.030 sys,  0.190 user,  371.77M mem
+286 Elapsed time:    0:00:01    Wed Nov 18 15:29:45 2026
+287 User CPU time used: 0 seconds
+288 System CPU time used: 0 seconds
+289 pliAppInit
+290 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
+291 FSDB_GATE is set.
+292 FSDB_RTL is set.
+293 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
+294 Enable Parallel Dumping.
+295 pliAppMiscSet: New Sim Round
+296 pliEntryInit
+297 LIBSSCORE=found /home/install/synopsys_tools/verdi/verdi/U-2023.03-SP1/share/PLI/lib/LINUXAMD64/libsscore_vcs202303.so through $NOVAS_HOME setting.
+298 FSDB Dumper for VCS, Release Verdi_U-2023.03-SP1, Linux x86_64/64bit, 05/28/2023
+299 (C) 1996 - 2023 by Synopsys, Inc.
+300 sps_call_fsdbDumpfile_main at 0 : /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/tb_top.sv(128)
+301 argv[0]: (inter.fsdb)
+302 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+303 *Verdi* : Create FSDB file 'inter.fsdb'
+304 [spi_vcs_vd_ppi_create_root]: no upf option
+305 compile option from '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/infra/simv.daidir/vcs_rebuild'.
+306   "vcs '-full64' '-sverilog' '-ntb_opts' 'uvm' '-debug_access+all' '-kdb' '-timescale=1ns/1ps' '+lint=TFIPC-L' '-cm' 'line+cond+fsm+tgl+branch' '-cm_dir' './coverage.vdb' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu_in1_mux.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu_in2_mux.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu_mul_csr_mux.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/alu.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Control_Unit.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/CoreRV.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/csr_register_file.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/csr_unit.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/data_ram.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/dp_ram.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/immediate_generator.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/instr_ram.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/interrupt_controller.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/LSU_RVX.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Memory_Ctrl.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/memtoreg_mux.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/pc_mux.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Pipelined_M.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/register_file.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/sp_ram.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Stage1.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/Stage2.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/rtl/stall_controller.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_if.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/corerv_pkg.sv' '/home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/tb_top.sv' './spike_wrapper.so' 2>&1"
+307 DVDI_is_vir_unload_enabled is enable
+308 FSDB_VCS_ENABLE_NATIVE_VC is enable
+309 sps_call_fsdbDumpvars_vd_main at 0 : /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/tb_top.sv(129)
+310 argv[0]: (0)
+311 argv[1]: (handle) tb_top
+312 *Verdi* : Begin traversing the scope (tb_top), layer (0).
+313 *Verdi* : End of traversing.
+314 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.050 sys,  0.200 user,  488.88M mem
+                   incr: 0.010 sys,  0.010 user,  24.81M mem
+                   accu: 0.010 sys,  0.010 user,  24.81M mem
+              accu incr: 0.010 sys,  0.010 user,  24.81M mem
 
           Count usage: 6000 var,  4218 idcode,  230 callback
                  incr: 6000 var,  4218 idcode,  230 callback
                  accu: 6000 var,  4218 idcode,  230 callback
             accu incr: 6000 var,  4218 idcode,  230 callback
-308 Elapsed time:    0:00:02    Wed Nov 18 09:44:56 2026
-309 User CPU time used: 0 seconds
-310 System CPU time used: 0 seconds
-311 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.280 user,  489.91M mem
+315 Elapsed time:    0:00:02    Wed Nov 18 15:29:46 2026
+316 User CPU time used: 0 seconds
+317 System CPU time used: 0 seconds
+318 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.050 sys,  0.200 user,  489.93M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
-                   accu: 0.010 sys,  0.030 user,  25.74M mem
+                   accu: 0.010 sys,  0.010 user,  25.86M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
 
           Count usage: 6000 var,  4218 idcode,  230 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 6000 var,  4218 idcode,  230 callback
             accu incr: 0 var,  0 idcode,  0 callback
-312 Elapsed time:    0:00:02    Wed Nov 18 09:44:56 2026
-313 User CPU time used: 0 seconds
-314 System CPU time used: 0 seconds
-315 sps_call_fsdbDumpsva_vd_main at 0 : /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/tb_top.sv(130)
-316 argv[0]: (0)
-317 *Verdi* : Begin traversing the SVA assertions, layer (0).
-318 *Verdi* : End of traversing the SVA assertions.
-319 pliAppHDL_DumpSVAComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.290 user,  489.91M mem
-                   incr: 0.000 sys,  0.010 user,  0.00M mem
-                   accu: 0.000 sys,  0.010 user,  0.00M mem
-              accu incr: 0.000 sys,  0.010 user,  0.00M mem
+319 Elapsed time:    0:00:02    Wed Nov 18 15:29:46 2026
+320 User CPU time used: 0 seconds
+321 System CPU time used: 0 seconds
+322 sps_call_fsdbDumpsva_vd_main at 0 : /home/user1/Darshan_Verification/Tanuja/Revital-X-SoC_Core_Verification/tb/sv/tb_top.sv(130)
+323 argv[0]: (0)
+324 *Verdi* : Begin traversing the SVA assertions, layer (0).
+325 *Verdi* : End of traversing the SVA assertions.
+326 pliAppHDL_DumpSVAComplete traverse var: profile - 
+          CPU/Mem usage: 0.050 sys,  0.200 user,  489.93M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
           Count usage: 6004 var,  4222 idcode,  230 callback
                  incr: 4 var,  4 idcode,  0 callback
                  accu: 4 var,  4 idcode,  0 callback
             accu incr: 4 var,  4 idcode,  0 callback
-320 Elapsed time:    0:00:02    Wed Nov 18 09:44:56 2026
-321 User CPU time used: 0 seconds
-322 System CPU time used: 0 seconds
-323 pliAppHDL_DumpSVAComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.290 user,  489.91M mem
+327 Elapsed time:    0:00:02    Wed Nov 18 15:29:46 2026
+328 User CPU time used: 0 seconds
+329 System CPU time used: 0 seconds
+330 pliAppHDL_DumpSVAComplete: profile - 
+          CPU/Mem usage: 0.050 sys,  0.200 user,  489.93M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.010 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
           Count usage: 6004 var,  4222 idcode,  230 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 4 var,  4 idcode,  0 callback
             accu incr: 0 var,  0 idcode,  0 callback
-324 Elapsed time:    0:00:02    Wed Nov 18 09:44:56 2026
-325 User CPU time used: 0 seconds
-326 System CPU time used: 0 seconds
-327 Elapsed time:    0:00:02    Wed Nov 18 09:44:56 2026
-328 User CPU time used: 0 seconds
-329 System CPU time used: 0 seconds
-330 Sim process exit
-327 End of simulation at 50000000
-328 Memory usage: 491.938 M
-329 Maximum resident set size: 219 MB
-330 Hard page faults: 3
-331 Soft page faults: 41945
-332 Elapsed time:    0:00:02    Wed Nov 18 09:44:56 2026
-333 User CPU time used: 0 seconds
-334 System CPU time used: 0 seconds
-335 Begin FSDB profile info:
-336 FSDB Writer : bc1(47226) bcn(77203) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.241286) io wait(0.000000) theadpool wait(0.000000)
+331 Elapsed time:    0:00:02    Wed Nov 18 15:29:46 2026
+332 User CPU time used: 0 seconds
+333 System CPU time used: 0 seconds
+334 Elapsed time:    0:00:02    Wed Nov 18 15:29:46 2026
+335 User CPU time used: 0 seconds
+336 System CPU time used: 0 seconds
+337 Sim process exit
+334 End of simulation at 50000000
+335 Memory usage: 491.962 M
+336 Maximum resident set size: 222 MB
+337 Hard page faults: 0
+338 Soft page faults: 41954
+339 Elapsed time:    0:00:02    Wed Nov 18 15:29:46 2026
+340 User CPU time used: 0 seconds
+341 System CPU time used: 0 seconds
+342 Begin FSDB profile info:
+343 FSDB Writer : bc1(47319) bcn(79884) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.301190) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
-337 End FSDB profile info
-338 FSDB closed. Name: inter.fsdb Size: 135755
-339 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
-340                      - BlockUsed:1 Acquire:0 BufferUsed:1976746
-341                      - Flush:4 Expand:0 ProducerWait:0 ConsumerWait:0
-342                      - MainProducerTime:0.416968289 TotalConsumerTime:0.000000000
-343                      - ElapsedTime:1.408805000
-344 Producer   0 profile - BlockUsed:2 Acquire:0 BufferUsed:1976746
-345 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
-346                      - BlockUsed:2 Acquire:0 BufferUsed:1976746
-347 SimExit
-348 Elapsed time:    0:00:03    Wed Nov 18 09:44:57 2026
-349 User CPU time used: 0 seconds
-350 System CPU time used: 0 seconds
-351 Sim process exit
+344 End FSDB profile info
+345 FSDB closed. Name: inter.fsdb Size: 140711
+346 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+347                      - BlockUsed:1 Acquire:0 BufferUsed:2038717
+348                      - Flush:4 Expand:0 ProducerWait:0 ConsumerWait:0
+349                      - MainProducerTime:0.362353038 TotalConsumerTime:0.000000000
+350                      - ElapsedTime:1.830778000
+351 Producer   0 profile - BlockUsed:2 Acquire:0 BufferUsed:2038717
+352 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
+353                      - BlockUsed:2 Acquire:0 BufferUsed:2038717
+354 SimExit
+355 Elapsed time:    0:00:03    Wed Nov 18 15:29:47 2026
+356 User CPU time used: 0 seconds
+357 System CPU time used: 0 seconds
+358 Sim process exit
