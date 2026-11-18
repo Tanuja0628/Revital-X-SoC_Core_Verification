@@ -1,0 +1,27 @@
+------------------------------------------------------------------------
+                       RTL EXECUTION TRACE LOG                          
+------------------------------------------------------------------------
+PC: [0x80000000] INSTR: [0x800002b7] | WRITE REG: x5  = 0x80000000
+PC: [0x80000004] INSTR: [0xfff28313] | WRITE REG: x6  = 0x7fffffff
+PC: [0x80000008] INSTR: [0xfff00393] | WRITE REG: x7  = 0xffffffff
+PC: [0x8000000c] INSTR: [0x00029413] | WRITE REG: x8  = 0x80000000
+PC: [0x80000010] INSTR: [0x00135493] | WRITE REG: x9  = 0x3fffffff
+PC: [0x80000014] INSTR: [0x41f2d513] | WRITE REG: x10 = 0xffffffff
+PC: [0x80000018] INSTR: [0x0062a5b3] | WRITE REG: x11 = 0x00000001
+PC: [0x8000001c] INSTR: [0x0062b633] | WRITE REG: x12 = 0x00000000
+PC: [0x80000020] INSTR: [0x80020e37] | WRITE REG: x28 = 0x80020000
+PC: [0x80000024] INSTR: [0x000e2023] | NO_REG_WRITE
+PC: [0x80000028] INSTR: [0x000e2683] | WRITE REG: x13 = 0xxxxxxxxx
+PC: [0x8000002c] INSTR: [0x80010f37] | WRITE REG: x30 = 0x80010000
+PC: [0x80000030] INSTR: [0xc8a00093] | WRITE REG: x1  = 0xfffffc8a
+PC: [0x80000034] INSTR: [0xcc400113] | WRITE REG: x2  = 0xfffffcc4
+PC: [0x80000038] INSTR: [0xd4c00193] | WRITE REG: x3  = 0xfffffd4c
+PC: [0x8000003c] INSTR: [0xeca00213] | WRITE REG: x4  = 0xfffffeca
+PC: [0x80000040] INSTR: [0x09000293] | WRITE REG: x5  = 0x00000090
+PC: [0x80000044] INSTR: [0xe4600313] | WRITE REG: x6  = 0xfffffe46
+PC: [0x80000048] INSTR: [0xf0000393] | WRITE REG: x7  = 0xffffff00
+PC: [0x8000004c] INSTR: [0xcad00413] | WRITE REG: x8  = 0xfffffcad
+PC: [0x80000050] INSTR: [0x12900493] | WRITE REG: x9  = 0x00000129
+PC: [0x80000054] INSTR: [0x316c0137] | WRITE REG: x2  = 0x316c0000
+PC: [0x80000058] INSTR: [0x27868e13] | WRITE REG: x28 = 0xxxxxxxxx
+ >>> [MISMATCH DETECTED AT THIS STEP]
