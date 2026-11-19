@@ -35,10 +35,7 @@ def generate_assembly(num_instructions, filename="test.S"):
         f.write("    srai x10, x5, 31\n")         # shamt = 31
         f.write("    slt x11, x5, x6\n")          # Signed compare across sign boundary
         f.write("    sltu x12, x5, x6\n")         # Unsigned compare across sign boundary
-        # External Memory Bus (MIU / LSU_RVX) Transaction at 0x8002_0000
-        f.write("    lui x28, 0x80020\n")
-        f.write("    sw x0, 0(x28)\n")
-        f.write("    lw x13, 0(x28)\n")
+
 
         f.write("    lui x30, 0x80010\n") 
         
